@@ -1,5 +1,4 @@
 import Image from "next/image";
-import People from "@/public/Icon/people.svg";
 import FAQAccordion from "../faqs/page";
 import Lester from "@/public/Team/Lester.jpg";
 import Art from "@/public/Team/Art.jpg";

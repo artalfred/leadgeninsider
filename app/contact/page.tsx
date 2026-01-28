@@ -1,14 +1,6 @@
 "use client";
 
-import { useState } from "react";
-
 export default function FAQAccordion() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const toggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
     <div className="max-w-7xl mx-auto space-y-4 2xl:px-40 lg:px-30 md:px-20 sm:px-4 px-4 2xl:mt-60 md:mt-50 sm:mt-50 mt-50">
       <div className="grid justify-center items-center 2xl:pb-20 md:pb-15 sm:pb-10 pb-10">

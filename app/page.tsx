@@ -15,7 +15,6 @@ import WhyThisWorks from "@/public/SetupProcess/WhyThisWorks.png";
 import Deals from "@/public/Home/Deals.jpeg";
 import CardBox from "./components/CardBox";
 import SetupProcess, { SetupProcessMobile } from "./components/SetupProcess";
-import Link from "next/link";
 
 export default async function Home() {
   return (
