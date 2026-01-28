@@ -1,15 +1,10 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Syriac:wght@100..900&display=swap");
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +14,196 @@
   }
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Noto Sans Syriac", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* NAVIGATION */
+.menu {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.menu:hover {
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+/* Make video cover the entire viewport  */
+.bg-video {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+
+  object-fit: cover; /* fill without distortion (crops edges if needed) */
+  object-position: center;
+
+  z-index: -1; /* sit behind content */
+  pointer-events: none; /* don't block clicks */
+  filter: brightness(0.75); /* optional darken for readability */
+}
+
+/* Ensure site content sits above the video */
+
+/* Optional: image overlay above video */
+.image-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -1; /* behind content, above video */
+  display: grid;
+  place-items: center; /* center the overlay image */
+  pointer-events: none; /* if it's decorative */
+}
+
+/* Site content sits above both */
+.content-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional: image overlay above video */
+.image-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -2; /* behind content, above video */
+  display: grid;
+  place-items: center; /* center the overlay image */
+  pointer-events: none; /* if it's decorative */
+}
+
+/* Site content sits above both */
+.content-overlay {
+  position: relative;
+  z-index: -1;
+}
+
+/* Accessibility: respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .bg-video {
+    display: none; /* hide video for users who prefer reduced motion */
+  }
+}
+
+/* Accessibility: respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .bg-video {
+    display: none; /* hide video for users who prefer reduced motion */
+  }
+}
+
+/* /////////////////////////////////////////////////// */
+/* GENERAL */
+/* /////////////////////////////////////////////////// */
+
+p {
+  font-size: 16px;
+}
+
+/* BUTTONS */
+
+.primary-btn {
+  background-color: #fff;
+  color: #0a0a0a;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: #004aad;
+  border: 2px solid #004aad;
+  transition: all 0.2s ease-in-out;
+  color: #ededed;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  border: 2px solid #f3f3f3;
+  background-color: #f3f3f3;
+  transition: all 0.2s ease-in-out;
+  color: #171717;
+}
+
+/* /////////////////////////////////////////////////// */
+/* LOGO SECTION */
+/* /////////////////////////////////////////////////// */
+.logo--section {
+  padding: 2rem;
+}
+
+/* LOGO SLIDER */
+.section {
+  padding: 4rem 0rem 4rem 0rem;
+}
+
+/* Soft fade edges using CSS mask (works in modern browsers) */
+.edge-mask {
+  /* Fades left/right ~10% of width. Adjust stops as needed. */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 20%,
+    black 90%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 20%,
+    black 90%,
+    transparent
+  );
+}
+
+/* /////////////////////////////////////////////////// */
+/* HOME */
+/* /////////////////////////////////////////////////// */
+.box {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem; /* 20px */
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 425px) {
+}
+
+.nav-hidden {
+  transform: translateY(-200%);
+  transition: transform 0.3s ease;
+}
+
+.nav-visible {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+/* WHY THIS WORKS */
+.whyThisWorks {
+  background-image: url("@/public/background/pattern.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 40%;
+
+  height: 40rem;
 }
