@@ -66,7 +66,12 @@ export default function Header() {
 
         <div className="2xl:flex lg:flex md:hidden sm:hidden hidden">
           {/* RIGHT BUTTON */}
-          <Button title="Let’s Talk" style="primary-btn" link="/contact" />
+          <Button
+            title="Let’s Talk"
+            style="primary-btn"
+            link="/contact"
+            align=""
+          />
         </div>
 
         {/* MOBILE */}
