@@ -21,7 +21,14 @@ export default function RootLayout({
       <body className="antialiased">
         <ScrollToTop />
         <Header />
-        <video className="bg-video" autoPlay muted loop playsInline>
+        <video
+          className="bg-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+        >
           <source src="/background/default.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
