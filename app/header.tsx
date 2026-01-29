@@ -5,13 +5,18 @@ import Button from "./components/Button";
 
 import Logo from "@/public/Logo/Logo.svg";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
   const toogleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleCliked = () => {
+    setIsOpen(false);
   };
 
   return (
@@ -121,6 +126,7 @@ export default function Header() {
               <div className="absolute gap-4 grid mt-5">
                 <Link
                   href="/whyleadgeninsider"
+                  onClick={handleCliked}
                   scroll
                   className="w-full py-3 text-2xl font-normal cursor-pointer hover:text-[#004aad] transition-all ease-in-out duration-300"
                 >
@@ -128,24 +134,28 @@ export default function Header() {
                 </Link>
                 <Link
                   href="/pricing"
+                  onClick={handleCliked}
                   className="w-full py-3 text-2xl font-normal cursor-pointer hover:text-[#004aad] transition-all ease-in-out duration-300"
                 >
                   Pricing
                 </Link>
                 <Link
                   href="/aboutUs"
+                  onClick={handleCliked}
                   className="w-full py-3 text-2xl font-normal cursor-pointer hover:text-[#004aad] transition-all ease-in-out duration-300"
                 >
                   About Us
                 </Link>
                 <Link
                   href="/ourTeam"
+                  onClick={handleCliked}
                   className="w-full py-3 text-2xl font-normal cursor-pointer hover:text-[#004aad] transition-all ease-in-out duration-300"
                 >
                   Our Team
                 </Link>
                 <Link
                   href="/faqs"
+                  onClick={handleCliked}
                   className="w-full py-3 text-2xl font-normal cursor-pointer hover:text-[#004aad] transition-all ease-in-out duration-300"
                 >
                   FAQ&apos;s
