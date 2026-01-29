@@ -29,7 +29,7 @@ export default function RootLayout({
           playsInline
           preload="auto"
         >
-          <source src="/background/default.mp4" type="video/mp4" />
+          <source src="/default.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
