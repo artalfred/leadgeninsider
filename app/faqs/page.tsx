@@ -79,12 +79,12 @@ export default function FAQAccordion() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto space-y-4 2xl:px-40 lg:px-30 md:px-20 sm:px-4 px-4 2xl:mt-60 md:mt-40 sm:mt-30 mt-30">
+    <div className="max-w-7xl mx-auto space-y-4 2xl:px-40 lg:px-30 md:px-20 sm:px-4 px-4 2xl:mt-60 md:mt-40 sm:mt-40 mt-40">
       <div className="grid justify-center items-center 2xl:pb-20 md:pb-15 sm:pb-10 pb-10">
         <h1 className="text-center leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-5xl sm:text-2xl text-2xl">
           Frequently Asked Questions
         </h1>
-        <h1 className="mt-2 2xl:text-xl md:text-xl sm:text-lg text-lg text-center 2xl:w-240 md:w-full w-full">
+        <h1 className="mt-2 2xl:text-xl md:text-xl sm:text-lg text-md text-center 2xl:w-240 md:w-full w-full">
           Everything you need to know about our
           <span className="font-bold">
             &nbsp; high-scale inbox infrastructure,&nbsp;

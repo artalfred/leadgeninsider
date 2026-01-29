@@ -18,7 +18,7 @@ export default function Team() {
               <div className="h-0.5 bg-green-600 2xl:w-4 md:w-3 w-3"></div>
             </div>
           </div>
-          <h1 className="text-center 2xl:leading-none md:leading-normal sm:leading-10 leading-10 font-bold 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-4xl text-3xl">
+          <h1 className="text-center 2xl:leading-none md:leading-normal sm:leading-8 leading-8 font-bold 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl">
             Meet the Experts Behind Your Business Success
           </h1>
           <h5 className="text-center 2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md 2xl:px-30 lg:px-30 md:px-20 sm:px-15 px-4">

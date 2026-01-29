@@ -27,7 +27,7 @@ export default function whyleadgeninsider() {
               <div className="h-0.5 bg-green-600 2xl:w-4 md:w-3 w-3"></div>
             </div>
           </div>
-          <h1 className="text-center 2xl:leading-none md:leading-normal sm:leading-normal leading-normal font-bold 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-4xl text-3xl">
+          <h1 className="text-center 2xl:leading-none md:leading-normal sm:leading-8 leading-8 font-bold 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl">
             A Smarter Way to Scale Outbound
           </h1>
           <h5 className="text-center 2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md 2xl:px-50 lg:px-40 md:px-20 sm:px-15 px-4">
