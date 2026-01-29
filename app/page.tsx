@@ -323,7 +323,7 @@ export default async function Home() {
                 </div>
 
                 <div className="grid justify-center gap-4">
-                  <div className="2xl:flex md:grid sm:grid grid gap-0">
+                  <div className="2xl:flex md:grid sm:grid grid 2xl:gap-5 md:gap-3 sm:gap-3 gap-3">
                     <Button
                       title="BOOK A CALL"
                       style="primary-btn mt-4"

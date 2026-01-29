@@ -21,6 +21,7 @@ export default function RootLayout({
       <body className="antialiased">
         <ScrollToTop />
         <Header />
+
         <video
           className="bg-video"
           autoPlay
