@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "./components/Button";
 import Container from "./components/Container";
 import Image from "next/image";
@@ -15,8 +17,39 @@ import WhyThisWorks from "@/public/SetupProcess/WhyThisWorks.png";
 import Deals from "@/public/Home/Deals.jpeg";
 import CardBox from "./components/CardBox";
 import SetupProcess, { SetupProcessMobile } from "./components/SetupProcess";
+import Infrastructure from "@/public/INFRASTRUCTURESETUP.svg";
+import { useEffect, useRef, useState } from "react";
 
-export default async function Home() {
+export default function Home() {
+  const [isOpen, setIsOpen] = useState(0);
+
+  const handleClickedOpen = () => {
+    setIsOpen(1);
+  };
+
+  const handleClickedClose = () => {
+    setIsOpen(0);
+  };
+
+  const infraRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        infraRef.current &&
+        !infraRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(0);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <>
       <Container>
@@ -39,12 +72,12 @@ export default async function Home() {
                 align="flex justify-center"
               ></Button>
 
-              <Button
-                title="View Infrastructure Setup"
-                style="secondary-btn"
-                link="/"
-                align="flex justify-center"
-              ></Button>
+              <button
+                className="secondary-btn flex items-center gap-2 rounded-md 2xl:px-6 lg:px-6 md:px-6 sm:px-4 px-4 2xl:pt-3 lg:pt-3 md:pt-3 sm:pt-3 pt-3 2xl:pb-2 lg:pb-2 md:pb-2 sm:pb-2 pb-2 2xl:text-md lg:text-md md:text-md sm:text-sm text-sm font-medium"
+                onClick={handleClickedOpen}
+              >
+                View Infrastructure Setup
+              </button>
             </div>
           </div>
 
@@ -62,6 +95,40 @@ export default async function Home() {
           </div>
         </div>
       </Container>
+
+      {/* INFRASTRUCTURE SETUP */}
+      <div
+        ref={infraRef}
+        className={`infra 2xl:w-270 lg:w-200 md:w-[96%] sm:w-[96%] w-[96%] fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 scale-${isOpen} transition-all ease-in-out duration-500`}
+      >
+        <div className="relative p-3 shadow-2xl rounded-2xl bg-slate-800/80">
+          <Image
+            src={Infrastructure}
+            className="rounded-2xl"
+            alt="INFRASTRUCTURE SETUP"
+          />
+          <div className="absolute 2xl:-right-4 md:right-0 sm:right-0 right-0 -top-4">
+            <button onClick={handleClickedClose}>
+              <span className="cursor-pointer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="2"
+                  stroke="currentColor"
+                  className="2xl:size-17 md:size-12 sm:size-12 size-12 2xl:p-4 md:p-3 sm:p-3 p-2 bg-slate-700/95 rounded-full transition-all ease-in-out duration-200"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
 
       {/* Our Setup Process (Step-by-Step) */}
       <Container>
