@@ -196,6 +196,7 @@ export default function whyleadgeninsider() {
                 title="Send us a message – we reply in minutes."
                 style="primary-btn mt-4"
                 link="/contact"
+                align=""
               ></Button>
             </div>
           </div>

@@ -78,6 +78,7 @@ export default function Pricing() {
                 title="Start Sending at Scale"
                 style="primary-btn mt-4"
                 link="/contact"
+                align=""
               ></Button>
             </div>
           </div>
@@ -134,6 +135,7 @@ export default function Pricing() {
               title="Request Pricing"
               style="secondary-btn mt-4"
               link="/contact"
+              align=""
             ></Button>
           </div>
         </div>

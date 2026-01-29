@@ -148,6 +148,7 @@ export default function AboutUs() {
                     title="Schedule Discussion"
                     style="secondary-btn mt-4"
                     link="/contact"
+                    align=""
                   ></Button>
                 </div>
               </div>
@@ -209,6 +210,7 @@ export default function AboutUs() {
                     title="Schedule Discussion"
                     style="secondary-btn mt-4"
                     link="/contact"
+                    align=""
                   ></Button>
                 </div>
               </div>
@@ -262,6 +264,7 @@ export default function AboutUs() {
                     title="Schedule Discussion"
                     style="secondary-btn mt-4"
                     link="/contact"
+                    align=""
                   ></Button>
                 </div>
               </div>
@@ -314,6 +317,7 @@ export default function AboutUs() {
                     title="Schedule Discussion"
                     style="secondary-btn mt-4"
                     link="/contact"
+                    align=""
                   ></Button>
                 </div>
               </div>

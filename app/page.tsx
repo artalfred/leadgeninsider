@@ -20,7 +20,7 @@ export default async function Home() {
   return (
     <>
       <Container>
-        <div className="grid gap-20 justify-center 2xl:mt-60 mt-40">
+        <div className="grid 2xl:gap-20 md:gap-15 sm:gap-10 gap-10 justify-center 2xl:mt-60 mt-40">
           <div className="grid gap-6">
             <h1 className="text-center leading-none font-bold 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-4xl text-3xl">
               Done-for-you email infrastructure for lead gen teams&nbsp;—&nbsp;{" "}
@@ -31,17 +31,19 @@ export default async function Home() {
               style="text-center"
               content="We automate subdomain creation, DNS configuration, and inbox infrastructure at scale—so you can send high volumes, protect deliverability, and save significant time and costs."
             />
-            <div className="flex gap-4 justify-center">
+            <div className="2xl:flex md:grid sm:grid grid gap-4 justify-center">
               <Button
                 title="Get Started"
                 style="primary-btn"
                 link="/contact"
+                align="flex justify-center"
               ></Button>
 
               <Button
                 title="View Infrastructure Setup"
                 style="secondary-btn"
                 link="/"
+                align="flex justify-center"
               ></Button>
             </div>
           </div>
@@ -63,15 +65,15 @@ export default async function Home() {
 
       {/* Our Setup Process (Step-by-Step) */}
       <Container>
-        <div className="grid 2xl:gap-20 lg:gap-15 md:gap-15 sm:gap-15 gap-15 pb-10 pt-40">
+        <div className="grid 2xl:gap-20 lg:gap-15 md:gap-15 sm:gap-15 gap-10 pb-10 pt-20">
           <div className="flex gap-6 items-center">
             <h1 className="text-start leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl">
               Our Setup Process
             </h1>
 
-            <div className="grid 2xl:gap-3 md:gap-2 gap-2 2xl:mt-2 md:mt-2 sm:mt-2 mt-2">
-              <div className="h-0.5 bg-green-600 2xl:w-25 md:w-20 w-15"></div>
-              <div className="h-0.5 bg-green-600 2xl:w-10 md:w-8 w-6"></div>
+            <div className="grid 2xl:gap-3 md:gap-2 gap-2 2xl:mt-2 md:mt-2 sm:mt-2 mt-0">
+              <div className="h-0.5 bg-green-600 2xl:w-25 md:w-20 w-10"></div>
+              <div className="h-0.5 bg-green-600 2xl:w-10 md:w-8 w-4"></div>
             </div>
           </div>
 
@@ -127,6 +129,7 @@ export default async function Home() {
                   title="Send us a message – we reply in minutes."
                   style="primary-btn mt-4"
                   link="/contact"
+                  align="flex justify-start"
                 ></Button>
               </div>
             </div>
@@ -172,7 +175,7 @@ export default async function Home() {
           </svg>
         </div>
 
-        <div className="py-20 grid items-center 2xl:gap-20 lg:gap-15 md:gap-15 sm:gap-15 gap-15">
+        <div className="py-20 grid items-center 2xl:gap-20 lg:gap-15 md:gap-15 sm:gap-10 gap-10">
           <div className="flex gap-6 items-center">
             <h1 className="text-start leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl">
               Services Overview
@@ -271,6 +274,7 @@ export default async function Home() {
                   title="Pricing"
                   style="primary-btn 2xl:mt-4"
                   link="/pricing"
+                  align=""
                 ></Button>
               </div>
             </div>
@@ -290,18 +294,18 @@ export default async function Home() {
 
       {/* HOW TO GET STARTED */}
       <div className="mt-20">
-        <div className="max-w-7xl mx-auto  2xl:px-0 md:px-4 sm:px-4 px-4">
+        <div className="max-w-7xl mx-auto 2xl:px-0 md:px-4 sm:px-4 px-4">
           <div className="grid">
             <div className="grid justify-center items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 2xl:grid-cols-1 gap-5">
-              <div className="grid gap-10">
+              <div className="grid 2xl:gap-10 md:gap-7 sm:gap-7 gap-7">
                 <div className="flex gap-6 justify-center items-center">
-                  <h1 className="text-center leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl">
+                  <h1 className="2xl:text-center md:text-start sm:text-start text-start leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl">
                     How do we get started?
                   </h1>
 
-                  <div className="grid 2xl:gap-3 md:gap-2 gap-2 2xl:mt-2 md:mt-2 sm:mt-2 mt-2">
-                    <div className="h-0.5 bg-green-600 2xl:w-25 md:w-20 w-15"></div>
-                    <div className="h-0.5 bg-green-600 2xl:w-10 md:w-8 w-6"></div>
+                  <div className="grid 2xl:gap-3 md:gap-2 gap-2 2xl:mt-2 md:mt-2 sm:mt-2 mt-0">
+                    <div className="h-0.5 bg-green-600 2xl:w-25 md:w-20 w-10"></div>
+                    <div className="h-0.5 bg-green-600 2xl:w-10 md:w-8 w-4"></div>
                   </div>
                 </div>
 
@@ -319,16 +323,18 @@ export default async function Home() {
                 </div>
 
                 <div className="grid justify-center gap-4">
-                  <div className="flex align-middle gap-6">
+                  <div className="2xl:flex md:grid sm:grid grid gap-0">
                     <Button
                       title="BOOK A CALL"
                       style="primary-btn mt-4"
                       link="/contact"
+                      align="flex justify-center"
                     ></Button>
                     <Button
                       title="Frequently Asked Questions"
                       style="secondary-btn mt-4"
                       link="/faqs"
+                      align="flex justify-center"
                     ></Button>
                   </div>
                 </div>

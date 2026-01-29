@@ -144,7 +144,7 @@ export default function SetupProcess() {
   return (
     <section className="2xl:block lg:block md:hidden sm:hidden hidden">
       {/* BUTTONS */}
-      <div className="flex gap-4 justify-start mb-10 ">
+      <div className="flex gap-4 justify-start mb-10">
         {FEATURES.map((feature) => (
           <button
             key={feature.id}
@@ -173,7 +173,7 @@ export default function SetupProcess() {
       </div>
 
       {/* CONTENT */}
-      <div className="mt-20">
+      <div>
         {FEATURES.map(
           (feature) =>
             activeFeature === feature.id && (

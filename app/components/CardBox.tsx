@@ -45,6 +45,7 @@ export default function CardBox({
             title="Schedule Discussion"
             style="secondary-btn mt-4"
             link={`/${Link}`}
+            align=""
           ></Button>
         </div>
       </div>
