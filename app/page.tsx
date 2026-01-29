@@ -22,19 +22,19 @@ import { useEffect, useRef, useState } from "react";
 import useClickedOutside from "./components/hooks/useClickOutside";
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
 
   useClickedOutside(menuRef, () => {
-    if (isOpen) setIsOpen(0);
+    if (isOpen) setIsOpen(false);
   });
 
   const handleClickedOpen = () => {
-    setIsOpen(1);
+    setIsOpen(true);
   };
 
   const handleClickedClose = () => {
-    setIsOpen(0);
+    setIsOpen(false);
   };
 
   return (
@@ -86,7 +86,7 @@ export default function Home() {
       {/* INFRASTRUCTURE SETUP */}
       <div
         ref={menuRef}
-        className={`infra 2xl:w-270 lg:w-200 md:w-[96%] sm:w-[96%] w-[96%] fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 scale-${isOpen} transition-all ease-in-out duration-500`}
+        className={`infra 2xl:w-270 lg:w-200 md:w-[96%] sm:w-[96%] w-[96%] fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 ${isOpen ? "scale-100" : "scale-0"} transition-all ease-in-out duration-500`}
       >
         <div className="relative p-3 shadow-2xl rounded-2xl bg-slate-800/80">
           <Image
