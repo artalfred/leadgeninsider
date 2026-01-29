@@ -25,7 +25,7 @@ export default function RootLayout({
         {/* <Image src={Background} alt="home" className="bg-video" /> */}
 
         <video
-          controls
+          controls={false}
           preload="metadata"
           className="bg-video w-full h-auto"
           autoPlay
