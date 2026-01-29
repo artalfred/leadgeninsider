@@ -51,6 +51,11 @@ body {
   filter: brightness(0.75); /* optional darken for readability */
 }
 
+video::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
 /* Ensure site content sits above the video */
 
 /* Optional: image overlay above video */
