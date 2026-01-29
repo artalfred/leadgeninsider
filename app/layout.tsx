@@ -4,6 +4,8 @@ import "./globals.css";
 import Footer from "./footer";
 import Header from "./header";
 import ScrollToTop from "./components/scrollToTop";
+import Image from "next/image";
+import Background from "@/public/background/Background.svg";
 
 export const metadata: Metadata = {
   title: "LeadGen Insider",
@@ -22,17 +24,7 @@ export default function RootLayout({
         <ScrollToTop />
         <Header />
 
-        <video
-          className="bg-video"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-        >
-          <source src="/default.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <Image src={Background} alt="home" className="bg-video" />
 
         <main>
           <div>{children}</div>
