@@ -19,9 +19,15 @@ import CardBox from "./components/CardBox";
 import SetupProcess, { SetupProcessMobile } from "./components/SetupProcess";
 import Infrastructure from "@/public/INFRASTRUCTURESETUP.svg";
 import { useEffect, useRef, useState } from "react";
+import useClickedOutside from "./components/hooks/useClickOutside";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(0);
+  const menuRef = useRef(null);
+
+  useClickedOutside(menuRef, () => {
+    if (isOpen) setIsOpen(0);
+  });
 
   const handleClickedOpen = () => {
     setIsOpen(1);
@@ -30,25 +36,6 @@ export default function Home() {
   const handleClickedClose = () => {
     setIsOpen(0);
   };
-
-  const infraRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        infraRef.current &&
-        !infraRef.current.contains(event.target as Node)
-      ) {
-        setIsOpen(0);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
 
   return (
     <>
@@ -98,7 +85,7 @@ export default function Home() {
 
       {/* INFRASTRUCTURE SETUP */}
       <div
-        ref={infraRef}
+        ref={menuRef}
         className={`infra 2xl:w-270 lg:w-200 md:w-[96%] sm:w-[96%] w-[96%] fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 scale-${isOpen} transition-all ease-in-out duration-500`}
       >
         <div className="relative p-3 shadow-2xl rounded-2xl bg-slate-800/80">
