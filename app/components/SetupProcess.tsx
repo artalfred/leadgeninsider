@@ -198,12 +198,12 @@ export default function SetupProcess() {
                     </h3>
 
                     <div className="grid gap-2 mt-4">
-                      <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md text-white">
+                      <h6 className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md text-white">
                         {feature.content_one}
-                      </p>
-                      <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md text-white">
+                      </h6>
+                      <h6 className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md text-white">
                         {feature.content_two}
-                      </p>
+                      </h6>
                     </div>
 
                     <ul className="mt-2">
@@ -244,7 +244,7 @@ export function SetupProcessMobile() {
               <div key={feature.id} className="animate-fade">
                 <div className="grid items-center gap-10">
                   <div className="grid gap-5">
-                    <h3 className="2xl:text-xl md:text-xl sm:text-xl text-xl font-bold w-fit">
+                    <h3 className="2xl:text-xl md:text-xl sm:text-xl text-xl font-bold w-fit text-white">
                       {feature.title}
                     </h3>
                     <div className="2xl:p-6 lg:p-6 p-3 bg-amber-50/10 rounded-2xl w-fit">
@@ -263,10 +263,10 @@ export function SetupProcessMobile() {
 
                   <div>
                     <div className="grid gap-2">
-                      <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md">
+                      <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md text-white">
                         {feature.content_one}
                       </p>
-                      <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md">
+                      <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md text-white">
                         {feature.content_two}
                       </p>
                     </div>
@@ -286,7 +286,7 @@ export function SetupProcessMobile() {
                       </li>
                     </ul>
 
-                    <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md italic font-light mt-2">
+                    <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md italic font-light mt-2 text-white">
                       {feature.content_three}
                     </p>
                   </div>
