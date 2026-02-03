@@ -18,7 +18,7 @@ export default function whyleadgeninsider() {
       <div className="grid gap-20 justify-center 2xl:mt-60 mt-40">
         <div className="grid 2xl:gap-5 md:gap-4 sm:gap-3 gap-2">
           <div className="flex justify-center 2xl:gap-6 md:gap-4 sm:gap-4 gap-4 items-center">
-            <h1 className="leading-normal font-medium 2xl:text-xl lg:text-xl md:text-xl sm:text-lg text-lg">
+            <h1 className="leading-normal font-medium 2xl:text-xl lg:text-xl md:text-xl sm:text-lg text-lg text-white">
               Why LeadGenInsider
             </h1>
 
@@ -27,19 +27,19 @@ export default function whyleadgeninsider() {
               <div className="h-0.5 bg-green-600 2xl:w-4 md:w-3 w-3"></div>
             </div>
           </div>
-          <h1 className="text-center 2xl:leading-none md:leading-normal sm:leading-8 leading-8 font-bold 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl">
+          <h1 className="text-white text-center 2xl:leading-none md:leading-normal sm:leading-8 leading-8 font-bold 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl">
             A Smarter Way to Scale Outbound
           </h1>
-          <h5 className="text-center 2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md 2xl:px-50 lg:px-40 md:px-20 sm:px-15 px-4">
+          <h5 className="text-white text-center 2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md 2xl:px-50 lg:px-40 md:px-20 sm:px-15 px-0">
             When choosing an email infrastructure partner, the difference isn’t
             in the tools—it’s in &nbsp;
-            <span className="text-gray-300/50">
+            <span className="text-green-500">
               how responsibly and predictably the system is built and managed.
             </span>
           </h5>
-          <h5 className="text-center 2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md 2xl:px-50 lg:px-40 md:px-20 sm:px-15 px-4">
+          <h5 className="text-white text-center 2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md 2xl:px-50 lg:px-40 md:px-20 sm:px-15 px-0">
             LeadGenInsider exists for teams that care about
-            <span className="text-gray-300/60">
+            <span className="text-green-500">
               &nbsp;long-term outbound performance,
             </span>{" "}
             not short-term volume.
@@ -95,7 +95,7 @@ export default function whyleadgeninsider() {
 
         <div className="py-20 grid items-center 2xl:gap-20 lg:gap-15 md:gap-15 sm:gap-15 gap-10 ">
           <div className="flex gap-6 items-center">
-            <h1 className="text-start leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl">
+            <h1 className="text-white text-start leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl">
               What We Provide
             </h1>
 
@@ -155,7 +155,7 @@ export default function whyleadgeninsider() {
         <div className="grid justify-between items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 gap-5">
           <div>
             <div className="flex gap-6 items-center">
-              <h1 className="leading-normal font-bold 2xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl text-2xl">
+              <h1 className="text-white leading-normal font-bold 2xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl text-2xl">
                 Best Fit For
               </h1>
 
@@ -166,24 +166,24 @@ export default function whyleadgeninsider() {
             </div>
 
             <div className="grid gap-4 2xl:mt-6 md:mt-4 sm:mt-2 mt-2">
-              <h5 className="2xl:text-2xl md:text-xl sm:text-xl text-xl font-medium">
+              <h5 className="text-white 2xl:text-2xl md:text-xl sm:text-xl text-xl font-medium">
                 LeadGenInsider is ideal for:
               </h5>
               <ul>
-                <li className="2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
+                <li className="text-white 2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
                   <Image src={Checked} alt="Checked" height={20} />
                   <span className="mt-2">Lead generation agencies</span>
                 </li>
-                <li className="2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
+                <li className="text-white 2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
                   <Image src={Checked} alt="Checked" height={20} />
                   <span className="mt-2">Established outbound teams</span>
                 </li>
-                <li className="2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
+                <li className="text-white 2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
                   <Image src={Checked} alt="Checked" height={20} />
                   <span className="mt-2">High-volume email senders</span>
                 </li>
 
-                <li className="2xl:text-xl md:text-lg sm:text-lg text-lg mt-7">
+                <li className="text-white 2xl:text-xl md:text-lg sm:text-lg text-lg mt-7">
                   If you value{" "}
                   <span className="text-green-500">
                     control, reliability, and long-term deliverability,{" "}

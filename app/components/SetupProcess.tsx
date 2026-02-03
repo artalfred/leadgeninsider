@@ -152,8 +152,8 @@ export default function SetupProcess() {
             className={`px-3 py-3 rounded-xl font-medium transition flex items-center justify-center w-full
               ${
                 activeFeature === feature.id ?
-                  "bg-green-600/20 text-white"
-                : "bg-none text-gray-800 hover:bg-green-600/20"
+                  "bg-slate-600/30 text-white"
+                : "bg-none text-gray-800 hover:bg-slate-600/30"
               }
             `}
           >
@@ -193,15 +193,15 @@ export default function SetupProcess() {
                   </div>
 
                   <div className="w-[30%]">
-                    <h3 className="2xl:text-xl md:text-xl sm:text-xl text-xl font-bold w-fit">
+                    <h3 className="2xl:text-xl md:text-xl sm:text-xl text-xl font-bold w-fit text-white">
                       {feature.title}
                     </h3>
 
                     <div className="grid gap-2 mt-4">
-                      <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md">
+                      <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md text-white">
                         {feature.content_one}
                       </p>
-                      <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md">
+                      <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md text-white">
                         {feature.content_two}
                       </p>
                     </div>
@@ -221,7 +221,7 @@ export default function SetupProcess() {
                       </li>
                     </ul>
 
-                    <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md italic font-light mt-2">
+                    <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md italic font-light mt-2 text-white">
                       {feature.content_three}
                     </p>
                   </div>

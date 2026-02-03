@@ -18,7 +18,7 @@ import Deals from "@/public/Home/Deals.jpeg";
 import CardBox from "./components/CardBox";
 import SetupProcess, { SetupProcessMobile } from "./components/SetupProcess";
 import Infrastructure from "@/public/INFRASTRUCTURESETUP.svg";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import useClickedOutside from "./components/hooks/useClickOutside";
 
 export default function Home() {
@@ -42,7 +42,7 @@ export default function Home() {
       <Container>
         <div className="grid 2xl:gap-20 md:gap-15 sm:gap-10 gap-10 justify-center 2xl:mt-60 mt-40">
           <div className="grid gap-6">
-            <h1 className="text-center leading-none font-bold 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-4xl text-3xl">
+            <h1 className="text-center leading-none font-bold 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-4xl text-3xl text-white">
               Done-for-you email infrastructure for lead gen teams&nbsp;—&nbsp;{" "}
               <span className="text-gray-300/60">without burning domains.</span>
             </h1>
@@ -102,7 +102,7 @@ export default function Home() {
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2"
-                  stroke="currentColor"
+                  stroke="#fff"
                   className="2xl:size-17 md:size-12 sm:size-12 size-12 2xl:p-4 md:p-3 sm:p-3 p-2 bg-slate-700/95 rounded-full transition-all ease-in-out duration-200"
                 >
                   <path
@@ -121,7 +121,7 @@ export default function Home() {
       <Container>
         <div className="grid 2xl:gap-20 lg:gap-15 md:gap-15 sm:gap-15 gap-10 pb-10 pt-20">
           <div className="flex gap-6 items-center">
-            <h1 className="text-start leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl">
+            <h1 className="text-white text-start leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl">
               Our Setup Process
             </h1>
 
@@ -144,7 +144,7 @@ export default function Home() {
           <div className="grid justify-between items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 gap-5">
             <div>
               <div className="flex gap-6 items-center">
-                <h1 className="text-start leading-normal font-black 2xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl text-2xl">
+                <h1 className="text-start leading-normal font-black 2xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl text-2xl text-white">
                   Why This Works
                 </h1>
               </div>
@@ -152,27 +152,29 @@ export default function Home() {
                 <ul>
                   <li className="2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
                     <Image src={Checked} alt="Checked" height={20} />
-                    <span className="mt-2">One domain instead of hundreds</span>
+                    <span className="mt-2 text-white">
+                      One domain instead of hundreds
+                    </span>
                   </li>
                   <li className="2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
                     <Image src={Checked} alt="Checked" height={20} />
-                    <span className="mt-2">
+                    <span className="mt-2 text-white">
                       Automation-based subdomain & DNS setup
                     </span>
                   </li>
                   <li className="2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
                     <Image src={Checked} alt="Checked" height={20} />
-                    <span className="mt-2">
+                    <span className="mt-2 text-white">
                       Deliverability-first architecture
                     </span>
                   </li>
                   <li className="2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
                     <Image src={Checked} alt="Checked" height={20} />
-                    <span className="mt-2">
+                    <span className="mt-2 text-white">
                       Built for agencies and high-volume senders
                     </span>
                   </li>
-                  <li className="2xl:text-xl md:text-lg sm:text-lg text-lg mt-7">
+                  <li className="2xl:text-xl md:text-lg sm:text-lg text-lg mt-7 text-white">
                     This is how our clients safely operate{" "}
                     <span className="text-green-600">500–1,500+ inboxes </span>
                     at scale.
@@ -231,7 +233,7 @@ export default function Home() {
 
         <div className="py-20 grid items-center 2xl:gap-20 lg:gap-15 md:gap-15 sm:gap-10 gap-10">
           <div className="flex gap-6 items-center">
-            <h1 className="text-start leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl">
+            <h1 className="text-start leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl text-white">
               Services Overview
             </h1>
 
@@ -284,12 +286,12 @@ export default function Home() {
           <div className="grid justify-between items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 gap-5">
             <div>
               <div className="flex gap-6 items-center">
-                <h1 className="text-start leading-normal font-black 2xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl text-2xl">
+                <h1 className="text-start leading-normal font-black 2xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl text-2xl text-white">
                   Partnership / Commission-Based Deals
                 </h1>
               </div>
 
-              <h1 className="mt-2 text-xl">
+              <h1 className="mt-2 text-xl text-white">
                 Flexible, performance-aligned partnerships.
               </h1>
 
@@ -308,19 +310,27 @@ export default function Home() {
                 <ul>
                   <li className="text-xl flex items-center gap-3">
                     <Image src={Checked} alt="Checked" height={20} />
-                    <span className="mt-2">5+ years in email marketing</span>
+                    <span className="mt-2 text-white">
+                      5+ years in email marketing
+                    </span>
                   </li>
                   <li className="text-xl flex items-center gap-3">
                     <Image src={Checked} alt="Checked" height={20} />
-                    <span className="mt-2">Thousands of inboxes deployed</span>
+                    <span className="mt-2 text-white">
+                      Thousands of inboxes deployed
+                    </span>
                   </li>
                   <li className="text-xl flex items-center gap-3">
                     <Image src={Checked} alt="Checked" height={20} />
-                    <span className="mt-2">Smartlead & Bison compatible</span>
+                    <span className="mt-2 text-white">
+                      Smartlead & Bison compatible
+                    </span>
                   </li>
                   <li className="text-xl flex items-center gap-3">
                     <Image src={Checked} alt="Checked" height={20} />
-                    <span className="mt-2">Deliverability-first setup</span>
+                    <span className="mt-2 text-white">
+                      Deliverability-first setup
+                    </span>
                   </li>
                 </ul>
 
@@ -353,7 +363,7 @@ export default function Home() {
             <div className="grid justify-center items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 2xl:grid-cols-1 gap-5">
               <div className="grid 2xl:gap-10 md:gap-7 sm:gap-7 gap-7">
                 <div className="flex gap-6 justify-center items-center">
-                  <h1 className="2xl:text-center md:text-start sm:text-start text-start leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl">
+                  <h1 className="text-white 2xl:text-center md:text-start sm:text-start text-start leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl">
                     How do we get started?
                   </h1>
 

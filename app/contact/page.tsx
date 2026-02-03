@@ -4,10 +4,10 @@ export default function FAQAccordion() {
   return (
     <div className="max-w-7xl mx-auto space-y-4 2xl:px-40 lg:px-30 md:px-20 sm:px-4 px-4 2xl:mt-60 md:mt-50 sm:mt-50 mt-50">
       <div className="grid justify-center items-center 2xl:pb-20 md:pb-15 sm:pb-10 pb-10">
-        <h1 className="text-center leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-5xl sm:text-2xl text-2xl">
+        <h1 className="text-center leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-5xl sm:text-2xl text-2xl text-white">
           LeadGensInsider Onboarding
         </h1>
-        <h1 className="mt-2 2xl:text-xl md:text-xl sm:text-lg text-lg text-center 2xl:w-240 md:w-full w-full">
+        <h1 className="mt-2 2xl:text-xl md:text-xl sm:text-lg text-lg text-center 2xl:w-240 md:w-full w-full text-white">
           Thanks for your interest in LeadGenInsider.
         </h1>
       </div>
@@ -20,7 +20,7 @@ export default function FAQAccordion() {
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
-              stroke="currentColor"
+              stroke="#fff"
               className="2xl:size-10 md:size-8 sm:size-6 size-6"
             >
               <path
@@ -29,7 +29,7 @@ export default function FAQAccordion() {
                 d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
               />
             </svg>
-            <h1 className="2xl:text-2xl md:text-xl sm:text-xl text-xl mt-1 fon-medium">
+            <h1 className="2xl:text-2xl md:text-xl sm:text-xl text-xl mt-1 fon-medium text-white">
               info@leadgeninsider.co
             </h1>
           </li>
@@ -39,7 +39,7 @@ export default function FAQAccordion() {
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
-              stroke="currentColor"
+              stroke="#fff"
               className="2xl:size-10 md:size-8 sm:size-6 size-6"
             >
               <path
@@ -49,7 +49,7 @@ export default function FAQAccordion() {
               />
             </svg>
 
-            <h1 className="2xl:text-2xl md:text-xl sm:text-xl text-xl mt-1 font-medium">
+            <h1 className="2xl:text-2xl md:text-xl sm:text-xl text-xl mt-1 font-medium text-white">
               +63 967 134 8488
             </h1>
           </li>

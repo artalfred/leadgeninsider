@@ -3,8 +3,10 @@
 import Image from "next/image";
 import Button from "./components/Button";
 import Logo from "@/public/Logo/Logo.svg";
+import LogoColored from "@/public/Logo/colored-logo.svg";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Navbar from "./components/Navbar";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,57 +19,60 @@ export default function Header() {
     setIsOpen(false);
   };
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    // cleanup (important!)
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
-    <header className="2xl:px-40 lg:px-30 md:px-30 px-5 sm:p-4 p-4 bg-sky-700/30 backdrop-blur-2xl flex justify-center shadow-sm fixed top-0 w-full z-10">
-      {/* MENU */}
+    <header className="2xl:px-40 lg:px-10 md:px-8 px-5 2xl:py-0 md:py-2 sm:py-3 py-3 bg-[#004aad]/30 backdrop-blur-2xl flex justify-center shadow-sm fixed top-0 w-full z-10">
       <div className="flex justify-between items-center w-full">
-        {/* LOGO */}
         <Link href="/">
-          <div className="2xl:pl-0 lg:pl-0 md:pl-0 sm:pl-2 pl-2">
+          <div>
             <Image
               src={Logo}
               alt="LeadGenInsder.Official.Logo"
-              className="2xl:w-40 lg:w-40 md:w-40 sm:w-50 w-50"
+              className="w-45"
             />
           </div>
         </Link>
 
         {/* NAV MENU */}
-        <ul className="items-center gap-12 2xl:flex lg:flex md:hidden sm:hidden hidden">
+        <ul className="items-center gap-12 2xl:flex xl:flex lg:hidden md:hidden sm:hidden hidden">
           <Link
             href="/whyleadgeninsider"
             scroll
-            className="2xl:text-md lg:text-md md:text-md sm:text-sm text-sm font-medium"
+            className="text-[15px] font-nomal text-white"
           >
-            <li className="cursor-pointer">Why LeadGenInsider</li>
+            <li className="cursor-pointer tracking-wider text-white">Why Us</li>
           </Link>
-          <Link
-            href="/pricing"
-            className="2xl:text-md lg:text-md md:text-md sm:text-sm text-sm font-medium"
-          >
-            <li className="cursor-pointer">Pricing</li>
+          <Navbar />
+          <Link href="/pricing" className="text-[15px] font-nomal">
+            <li className="cursor-pointer tracking-wider text-white">
+              Pricing
+            </li>
           </Link>
-          <Link
-            href="/aboutUs"
-            className="2xl:text-md lg:text-md md:text-md sm:text-sm text-sm font-normal"
-          >
-            <li className="cursor-pointer">About Us</li>
+          <Link href="/ourTeam" className="text-[15px] font-normal">
+            <li className="cursor-pointer tracking-wider text-white">
+              Our Team
+            </li>
           </Link>
-          <Link
-            href="/ourTeam"
-            className="2xl:text-md lg:text-md md:text-md sm:text-sm text-sm font-normal"
-          >
-            <li className="cursor-pointer">Our Team</li>
-          </Link>
-          <Link
-            href="/faqs"
-            className="2xl:text-md lg:text-md md:text-md sm:text-sm text-sm font-normal"
-          >
-            <li className="cursor-pointer">FAQ&apos;s</li>
+          <Link href="/aboutUs" className="text-[15px] font-normal">
+            <li className="cursor-pointer tracking-wider text-white">
+              About Us
+            </li>
           </Link>
         </ul>
 
-        <div className="2xl:flex lg:flex md:hidden sm:hidden hidden">
+        <div className="2xl:flex xl:flex lg:hidden md:hidden sm:hidden hidden">
           {/* RIGHT BUTTON */}
           <Button
             title="Let’s Talk"
@@ -78,7 +83,7 @@ export default function Header() {
         </div>
 
         {/* MOBILE */}
-        <div className="2xl:hidden lg:hidden md:block sm:block block">
+        <div className="2xl:hidden xl:hidden lg:flex md:flex sm:flex flex items-center justify-between z-10">
           {/* MENU BUTTON */}
           <button onClick={toogleMenu} className="flex justify-center">
             {isOpen ?
@@ -88,8 +93,8 @@ export default function Header() {
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2"
-                  stroke="currentColor"
-                  className="size-17 p-4 bg-slate-700/20 rounded-full transition-all ease-in-out duration-200"
+                  stroke="#fff"
+                  className="size-15 p-4 bg-slate-700/20 rounded-full transition-all ease-in-out duration-200"
                 >
                   <path
                     strokeLinecap="round"
@@ -104,8 +109,8 @@ export default function Header() {
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2"
-                  stroke="currentColor"
-                  className="size-17 p-4 bg-slate-700/20 rounded-full transition-all ease-in-out duration-200"
+                  stroke="#fff"
+                  className="size-15 p-4 bg-slate-700/20 rounded-full transition-all ease-in-out duration-200"
                 >
                   <path
                     strokeLinecap="round"
@@ -119,42 +124,58 @@ export default function Header() {
         </div>
 
         {isOpen ?
-          <div className="absolute top-25 left-0 w-full ">
-            <ul className="bg-[#0c274a] shadow-2xl 2xl:hidden lg:hidden md:grid sm:grid grid px-5 py-5 w-full h-screen">
-              <div className="absolute gap-4 grid mt-5">
+          <div className="absolute top-0 left-0 w-full">
+            <ul className="bg-white shadow-2xl 2xl:hidden xl:hidden lg:grid md:grid sm:grid grid px-5 py-5 w-full">
+              <Link href="/">
+                <div>
+                  <Image
+                    src={LogoColored}
+                    alt="LeadGenInsder.Official.Logo"
+                    className="w-45"
+                  />
+                </div>
+              </Link>
+              <div className="grid mt-10 w-full">
                 <Link
                   href="/whyleadgeninsider"
                   onClick={handleClicked}
                   scroll
-                  className="w-full py-3 text-2xl font-normal cursor-pointer hover:text-[#004aad] transition-all ease-in-out duration-300"
+                  className="text-[#0c274a] border-b w-full pb-5 pt-7 flex items-center leading-none text-xl cursor-pointer hover:text-[#004aad] transition-all ease-in-out duration-300"
                 >
                   Why LeadGenInsider
                 </Link>
                 <Link
                   href="/pricing"
                   onClick={handleClicked}
-                  className="w-full py-3 text-2xl font-normal cursor-pointer hover:text-[#004aad] transition-all ease-in-out duration-300"
+                  className="text-[#0c274a] border-b w-full pb-5 pt-7 flex items-center leading-none text-xl cursor-pointer hover:text-[#004aad] transition-all ease-in-out duration-300"
                 >
                   Pricing
                 </Link>
                 <Link
+                  href="/blog"
+                  onClick={handleClicked}
+                  className="text-[#0c274a] border-b w-full pb-5 pt-7 flex items-center leading-none text-xl cursor-pointer hover:text-[#004aad] transition-all ease-in-out duration-300"
+                >
+                  Blog
+                </Link>
+                <Link
                   href="/aboutUs"
                   onClick={handleClicked}
-                  className="w-full py-3 text-2xl font-normal cursor-pointer hover:text-[#004aad] transition-all ease-in-out duration-300"
+                  className="text-[#0c274a] border-b w-full pb-5 pt-7 flex items-center leading-none text-xl cursor-pointer hover:text-[#004aad] transition-all ease-in-out duration-300"
                 >
                   About Us
                 </Link>
                 <Link
                   href="/ourTeam"
                   onClick={handleClicked}
-                  className="w-full py-3 text-2xl font-normal cursor-pointer hover:text-[#004aad] transition-all ease-in-out duration-300"
+                  className="text-[#0c274a] border-b w-full pb-5 pt-7 flex items-center leading-none text-xl cursor-pointer hover:text-[#004aad] transition-all ease-in-out duration-300"
                 >
                   Our Team
                 </Link>
                 <Link
                   href="/faqs"
                   onClick={handleClicked}
-                  className="w-full py-3 text-2xl font-normal cursor-pointer hover:text-[#004aad] transition-all ease-in-out duration-300"
+                  className="text-[#0c274a] w-full pb-5 pt-7 flex items-center leading-none text-xl cursor-pointer hover:text-[#004aad] transition-all ease-in-out duration-300"
                 >
                   FAQ&apos;s
                 </Link>

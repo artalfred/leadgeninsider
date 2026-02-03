@@ -10,9 +10,9 @@ export default function AboutUs() {
   return (
     <div className="max-w-7xl mx-auto">
       <div className="grid gap-20 justify-center 2xl:mt-60 mt-40  2xl:px-0 md:px-6 sm:px-6 px-4">
-        <div className="grid 2xl:gap-5 md:gap-4 sm:gap-3 gap-2">
+        <div className="grid 2xl:gap-5 md:gap-4 sm:gap-3  gap-2">
           <div className="flex justify-center 2xl:gap-6 md:gap-4 sm:gap-4 gap-4 items-center">
-            <h1 className="leading-normal font-medium 2xl:text-xl lg:text-xl md:text-xl sm:text-lg text-lg">
+            <h1 className="text-white leading-normal font-medium 2xl:text-xl lg:text-xl md:text-xl sm:text-lg text-lg">
               About LeadGenInsider
             </h1>
 
@@ -21,23 +21,23 @@ export default function AboutUs() {
               <div className="h-0.5 bg-green-600 2xl:w-4 md:w-3 w-3"></div>
             </div>
           </div>
-          <h1 className="text-center 2xl:leading-none md:leading-normal sm:leading-8 leading-8 font-bold 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl">
+          <h1 className="text-white text-center 2xl:leading-none md:leading-normal sm:leading-8 leading-8 font-bold 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl">
             Built to Scale Outbound — Without Burning Your Infrastructure
           </h1>
-          <h5 className="text-center 2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md 2xl:px-30 lg:px-30 md:px-20 sm:px-15 px-4">
+          <h5 className="text-white text-center 2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md 2xl:px-30 lg:px-30 md:px-20 sm:px-15 px-0">
             LeadGenInsider was built to solve a problem most lead generation
             teams face too late— &nbsp;
-            <span className="text-gray-300/50">
+            <span className="text-green-500">
               email infrastructure that doesn’t scale safely.
             </span>
           </h5>
-          <h5 className="text-center 2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md 2xl:px-30 lg:px-30 md:px-20 sm:px-15 px-4">
+          <h5 className="text-white text-center 2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md 2xl:px-30 lg:px-30 md:px-20 sm:px-15 px-0">
             After years of working inside high-volume outbound operations, we
             saw the same pattern over and over: agencies burning domains,
             rebuilding inboxes every few weeks, manually configuring DNS, and
             wasting thousands of dollars just to stay operational. The tools
             existed—but the
-            <span className="text-gray-300/60">
+            <span className="text-green-500">
               &nbsp;infrastructure approach was broken.
             </span>{" "}
           </h5>
@@ -93,10 +93,10 @@ export default function AboutUs() {
                 </div>
 
                 <div className="grid gap-3">
-                  <h3 className="2xl:text-2xl md:text-xl sm:text-xl text-xl font-medium w-fit mt-3">
+                  <h3 className="2xl:text-2xl md:text-xl sm:text-xl text-xl font-medium w-fit mt-3 text-white">
                     Built for Scale, Not Shortcuts
                   </h3>
-                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md">
+                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md text-white">
                     LeadGenInsider specializes in{" "}
                     <span className="text-green-500">
                       automation-driven email infrastructure
@@ -112,33 +112,33 @@ export default function AboutUs() {
                 </div>
 
                 <ul className="grid gap-1">
-                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md font-medium">
+                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md font-medium text-white">
                     We Automate:
                   </h5>
-                  <li className="text-md gap-3 mt-2">
+                  <li className="text-md gap-3 text-white mt-2">
                     <span className="mr-4">✔</span>
                     Flexible Scaling
                   </li>
-                  <li className="text-md gap-3">
+                  <li className="text-md gap-3 text-white">
                     <span className="mr-4">✔</span>
                     Automated Foundations
                   </li>
 
-                  <li className="text-md gap-3">
+                  <li className="text-md gap-3 text-white">
                     <span className="mr-4">✔</span>
                     Managed Setup
                   </li>
-                  <li className="text-md gap-3">
+                  <li className="text-md gap-3 text-white">
                     <span className="mr-4">✔</span>
                     Reputation Protection
                   </li>
-                  <li className="text-md gap-3">
+                  <li className="text-md gap-3 text-white">
                     <span className="mr-4">✔</span>
                     Turnkey Deployment
                   </li>
-                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md font-medium mt-4">
+                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md font-medium mt-4 text-white">
                     This allows our clients to safely operate{" "}
-                    <span className="text-green-500">500–3,000+ inboxes</span>
+                    <span className="text-green-500">500–3,000+ inboxes </span>
                     without the fragility, cost, or chaos of traditional setups.
                   </h5>
                 </ul>
@@ -167,37 +167,37 @@ export default function AboutUs() {
                 </div>
 
                 <div className="grid gap-3">
-                  <h3 className="2xl:text-2xl md:text-xl sm:text-xl text-xl font-medium w-fit mt-3">
+                  <h3 className="2xl:text-2xl md:text-xl sm:text-xl text-xl font-medium w-fit mt-3 text-white">
                     Deliverability Comes First—Always
                   </h3>
-                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md">
+                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md text-white">
                     We don’t sell shortcuts, hacks, or risky tactics.
                   </h5>
                 </div>
 
                 <ul className="grid gap-1">
-                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md font-medium">
+                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md font-medium text-white">
                     Every system we build is designed around:
                   </h5>
-                  <li className="text-md gap-3 mt-2">
+                  <li className="text-md gap-3 text-white mt-2">
                     <span className="mr-4">✔</span>
                     Natural sending behavior
                   </li>
-                  <li className="text-md gap-3">
+                  <li className="text-md gap-3 text-white">
                     <span className="mr-4">✔</span>
                     Independent subdomain reputation
                   </li>
 
-                  <li className="text-md gap-3">
+                  <li className="text-md gap-3 text-white">
                     <span className="mr-4">✔</span>
                     Fast recovery and inbox replacement
                   </li>
-                  <li className="text-md gap-3">
+                  <li className="text-md gap-3 text-white">
                     <span className="mr-4">✔</span>
                     Long-term stability for outbound campaigns
                   </li>
 
-                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md font-medium mt-4">
+                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md font-medium mt-4 text-white">
                     If an inbox degrades, we replace it—{" "}
                     <span className="text-green-500">
                       without tearing down your entire system.
@@ -228,30 +228,30 @@ export default function AboutUs() {
                   </div>
                 </div>
 
-                <div className="grid gap-3">
+                <div className="grid gap-3 text-white">
                   <h3 className="2xl:text-2xl md:text-xl sm:text-xl text-xl font-medium w-fit mt-3">
                     Who We Work With
                   </h3>
                 </div>
 
                 <ul className="grid gap-1">
-                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md font-medium">
+                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md font-medium text-white">
                     We work primarily with:
                   </h5>
-                  <li className="text-md gap-3 mt-2">
+                  <li className="text-md gap-3 text-white mt-2">
                     <span className="mr-4">✔</span>
                     Lead generation agencies
                   </li>
-                  <li className="text-md gap-3">
+                  <li className="text-md gap-3 text-white">
                     <span className="mr-4">✔</span>
                     Cold email teams
                   </li>
-                  <li className="text-md gap-3">
+                  <li className="text-md gap-3 text-white">
                     <span className="mr-4">✔</span>
                     High-volume outbound marketers
                   </li>
 
-                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md font-medium mt-4">
+                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md font-medium mt-4 text-white">
                     Our clients don’t want theory. They want infrastructure that{" "}
                     <span className="text-green-500">
                       works, scales, and stays clean.
@@ -282,31 +282,31 @@ export default function AboutUs() {
                   </div>
                 </div>
 
-                <div className="grid gap-3">
+                <div className="grid gap-3 text-white">
                   <h3 className="2xl:text-2xl md:text-xl sm:text-xl text-xl font-medium w-fit mt-3">
                     Why Clients Choose LeadGenInsider
                   </h3>
                 </div>
 
                 <ul className="grid gap-1">
-                  <li className="text-md gap-3 mt-2">
+                  <li className="text-md gap-3 text-white mt-2">
                     <span className="mr-4">✔</span>
                     5+ years in email marketing infrastructure
                   </li>
-                  <li className="text-md gap-3">
+                  <li className="text-md gap-3 text-white">
                     <span className="mr-4">✔</span>
                     Thousands of inboxes deployed
                   </li>
-                  <li className="text-md gap-3">
+                  <li className="text-md gap-3 text-white">
                     <span className="mr-4">✔</span>
                     Smartlead & Bison compatible
                   </li>
-                  <li className="text-md gap-3">
+                  <li className="text-md gap-3 text-white">
                     <span className="mr-4">✔</span>
                     Automation-first, deliverability-focused systems
                   </li>
 
-                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md font-medium mt-4">
+                  <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md font-medium mt-4 text-white">
                     We handle the technical complexity—so you can focus on
                     closing deals.
                   </h5>

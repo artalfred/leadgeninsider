@@ -39,7 +39,7 @@ export default function Footer() {
             <div className="grid 2xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 py-5 sm:grid-cols-1 grid-cols-1 justify-between items-start 2xl:mt-15 md:mt-10 sm:mt-5 mt-5 2xl:gap-0 lg:gap-5 md:gap-5 sm:gap-10 gap-5 border-b-2 border-b-gray-600">
               <div className="grid gap-4 2xl:pb-10 md:pb-5 sm:pb-5 pb-5">
                 <div className="flex gap-4">
-                  <h2 className="text-xl font-medium border-b-2 border-b-[#004aad] pb-2">
+                  <h2 className="text-xl font-medium border-b-2 border-b-[#004aad] pb-2 text-white">
                     Company
                   </h2>
                 </div>
@@ -70,7 +70,7 @@ export default function Footer() {
               </div>
               <div className="grid gap-4 2xl:pb-10 md:pb-5 sm:pb-5 pb-5">
                 <div className="flex gap-4">
-                  <h2 className="text-xl font-medium border-b-2 border-b-[#004aad] pb-2">
+                  <h2 className="text-xl font-medium border-b-2 border-b-[#004aad] pb-2 text-white">
                     Resources
                   </h2>
                 </div>
@@ -90,7 +90,7 @@ export default function Footer() {
               </div>
               <div className="grid gap-4 2xl:pb-10 md:pb-5 sm:pb-5 pb-5">
                 <div className="flex gap-4">
-                  <h2 className="text-xl font-medium border-b-2 border-b-[#004aad] pb-2">
+                  <h2 className="text-xl font-medium border-b-2 border-b-[#004aad] pb-2 text-white">
                     Contact
                   </h2>
                 </div>
