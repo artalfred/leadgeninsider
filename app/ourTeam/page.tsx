@@ -2,6 +2,12 @@ import Image from "next/image";
 import FAQAccordion from "../faqs/page";
 import Lester from "@/public/Team/Lester.jpg";
 import Art from "@/public/Team/Art.jpg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "LeadGen Insider | Our Team",
+  description: "Meet the Experts Behind Your Business Success",
+};
 
 export default function Team() {
   return (

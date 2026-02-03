@@ -1,6 +1,13 @@
 import Image from "next/image";
 import { getBlogs } from "@/lib/getBlogs";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "LeadGen Insider | Insights & Updates",
+  description:
+    "Thoughtful perspectives, product updates, and practical guidance for teams that care about  stability, control, and long-term deliverability.",
+};
 
 export default function Blog() {
   const blogs = getBlogs();

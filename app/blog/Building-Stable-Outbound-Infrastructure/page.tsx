@@ -1,5 +1,12 @@
 import { getBlogs } from "@/lib/getBlogs";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Building Stable Outbound Infrastructure",
+  description:
+    "In the high-stakes world of sales and brokerage, the difference between a record-breaking month and a stagnant one usually boils down to one thing: The Quality of Your Pipeline.",
+};
 
 export default async function Page() {
   const blogs = getBlogs();

@@ -5,6 +5,12 @@ import People from "@/public/Icon/people.svg";
 import Deliverability from "@/public/Icon/Deliverability.svg";
 import Scale from "@/public/Icon/Scale.svg";
 import FAQAccordion from "../faqs/page";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About LeadGenInsider",
+  description: "Built to Scale Outbound — Without Burning Your Infrastructure",
+};
 
 export default function AboutUs() {
   return (

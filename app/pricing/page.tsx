@@ -1,4 +1,10 @@
 import Button from "@/app/components/Button";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "LeadGen Insider | Pricing",
+  description: "Inbox Infrastructure Plan | The “Growth“ Infrastructure Plan",
+};
 
 export default function Pricing() {
   return (

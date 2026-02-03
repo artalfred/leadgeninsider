@@ -6,9 +6,9 @@ import Header from "./header";
 import ScrollToTop from "./components/scrollToTop";
 
 export const metadata: Metadata = {
-  title: "LeadGen Insider",
+  title: "LeadGen Insider | Email infrastructure for lead gen teams",
   description:
-    "I help brands grow through bold visuals and thoughtful digital experiences that drive results.",
+    "We automate subdomain creation, DNS configuration, and inbox infrastructure at scale—so you can send high volumes, protect deliverability, and save significant time and costs.",
 };
 
 export default function RootLayout({

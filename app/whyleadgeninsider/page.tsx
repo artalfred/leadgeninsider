@@ -11,6 +11,13 @@ import WebDevelopment from "@/public/Icon/WebDevelopment.svg";
 import WebDevelopmentIcon from "@/public/Icon/WebDevelopmentIcon.svg";
 import DomainSetup from "@/public/Icon/DomainSetup.svg";
 import WhyUsCycle from "@/public/WhyUs/Cycle.jpeg";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Why LeadGenInsider | A Smarter Way to Scale Outbound",
+  description:
+    "When choosing an email infrastructure partner, the difference isn’t in the tools—it’s in  how responsibly and predictably the system is built and managed.",
+};
 
 export default function whyleadgeninsider() {
   return (
