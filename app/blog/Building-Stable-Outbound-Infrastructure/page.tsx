@@ -12,7 +12,7 @@ export default async function Page() {
   const blogs = getBlogs();
 
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-4xl mx-auto">
       {blogs.slice(0, 1).map((blog) => (
         <div key={blog.id} className="grid gap-10 justify-center mt-50 px-4">
           <div className="grid gap-3">
@@ -109,17 +109,17 @@ export default async function Page() {
                 How We Help You Scale
               </h1>
 
-              <ul className="ml-5 mt-4 grid gap-2">
-                <li className="text-white text-lg list-number">
-                  1. Niche Targeting: We dive deep into your specific industry
-                  to understand your ideal client profile (ICP).
+              <ul className="ml-10 mt-4 grid gap-2">
+                <li className="text-white text-lg list-decimal">
+                  Niche Targeting: We dive deep into your specific industry to
+                  understand your ideal client profile (ICP).
                 </li>
-                <li className="text-white text-lg list-number">
-                  2. Multichannel Outreach: We use a mix of SEO, targeted social
+                <li className="text-white text-lg list-decimal">
+                  Multichannel Outreach: We use a mix of SEO, targeted social
                   ads, and proprietary data to find prospects where they live.
                 </li>
-                <li className="text-white text-lg list-number">
-                  3. Vetting & Verification: We filter out the &quot;window
+                <li className="text-white text-lg list-decimal">
+                  Vetting & Verification: We filter out the &quot;window
                   shoppers&quot; so your calendar is only filled with serious
                   inquiries.
                 </li>

@@ -101,7 +101,7 @@ export default function Blog() {
                     <div className="text-sm text-gray-500 flex items-center gap-4">
                       <span>Published {blog.date} </span>
                       <span>&#183;</span>
-                      <span>4 min read</span>
+                      <span>6 min read</span>
                     </div>
                     <h5 className="2xl:text-4xl lg:text-2xl md:text-2xl sm:text-2xl text-2xl font-normal text-white">
                       {blog.title}
