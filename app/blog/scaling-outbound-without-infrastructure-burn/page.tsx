@@ -15,7 +15,7 @@ export default async function Page() {
 
   return (
     <div className="max-w-4xl mx-auto">
-      {blogs.slice(1, 2).map((blog) => (
+      {blogs.slice(0, 1).map((blog) => (
         <div key={blog.id} className="grid gap-10 justify-center mt-50 px-4">
           <div className="grid gap-3">
             <p className="text-gray-400 text-md text-center font-md">
