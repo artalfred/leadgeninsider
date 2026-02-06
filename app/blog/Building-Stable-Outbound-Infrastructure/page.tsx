@@ -20,17 +20,17 @@ export default async function Page() {
               Published {blog.date}
             </p>
             <h1
-              className="leading-normal text-white text-center font-bold
-          2xl:text-6xl lg:text-4xl md:text-3xl sm:text-2xl text-2xl"
+              className="leading-normal text-white text-center font-medium
+          2xl:text-6xl lg:text-4xl md:text-3xl sm:text-3xl text-3xl"
             >
               {blog.title}
             </h1>
-            <h1 className="text-white text-center text-lg">
+            <h1 className="text-gray-400 text-center text-lg">
               {blog.description}
             </h1>
 
             <div className="flex justify-center mt-3">
-              <span className="rounded-full bg-white shadow-2xl text-gray-800 px-3 pt-3 pb-2 text-xs w-fit">
+              <span className="rounded-full bg-white shadow-2xl text-gray-800 px-5 pt-3 pb-3 text-xs w-fit">
                 {blog.tag}
               </span>
             </div>
@@ -48,7 +48,7 @@ export default async function Page() {
 
           <div className="mt-4">
             <div className="grid gap-3 border-b border-gray-600 pb-10">
-              <h1 className="text-white text-lg">
+              <h1 className="text-gray-400 text-lg">
                 At LeadGenInsider, we aren’t just looking for &quot;clicks&quot;
                 or &quot;traffic.&quot; We are in the business of high-intent
                 connections. We help companies and independent brokers bridge
@@ -61,17 +61,17 @@ export default async function Page() {
               <h1 className="text-white text-xl text-[22px] font-medium">
                 Why the Old Way of Prospecting is Dying
               </h1>
-              <h1 className="text-white text-lg">
+              <h1 className="text-gray-400 text-lg">
                 Gone are the days when cold calling a random list of names would
                 yield a high ROI. Today’s market is saturated, and potential
                 clients have built-in &quot;sales filters.&quot;
               </h1>
               <ul className="ml-10 mt-4 grid gap-2">
-                <li className="text-white text-lg list-disc">
+                <li className="text-gray-400 text-lg list-disc">
                   The Problem: Most leads are cold, uninterested,
                   or—worse—recycled across five different competitors.
                 </li>
-                <li className="text-white text-lg list-disc">
+                <li className="text-gray-400 text-lg list-disc">
                   The Result: Your team wastes hours on the phone with people
                   who were never going to buy, leading to burnout and lost
                   revenue.
@@ -83,7 +83,7 @@ export default async function Page() {
               <h1 className="text-white text-[22px] font-medium">
                 The Insider Advantage: Quality Over Quantity
               </h1>
-              <h1 className="text-white text-lg">
+              <h1 className="text-gray-400 text-lg">
                 We specialize in identifying High-Value Prospects. Whether you
                 are a real estate broker, a SaaS company, or a financial service
                 provider, we tailor our approach to find clients who are already
@@ -95,13 +95,13 @@ export default async function Page() {
               <h1 className="text-white text-[22px] font-medium">
                 More Leads = More Revenue (It’s Simple Math)
               </h1>
-              <h1 className="text-white text-lg">
+              <h1 className="text-gray-400 text-lg">
                 We believe that lead generation shouldn&apos;t be an expense; it
                 should be an investment. By providing a steady stream of
                 potential clients, we allow you to do what you do best:
                 Negotiate and Close.
               </h1>
-              <h1 className="text-white text-lg">
+              <h1 className="text-gray-400 text-lg">
                 &quot;Stop chasing people who don&apos;t want to be found. Start
                 talking to people who are looking for your solution.&quot;
               </h1>
@@ -110,15 +110,15 @@ export default async function Page() {
               </h1>
 
               <ul className="ml-10 mt-4 grid gap-2">
-                <li className="text-white text-lg list-decimal">
+                <li className="text-gray-400 text-lg list-decimal">
                   Niche Targeting: We dive deep into your specific industry to
                   understand your ideal client profile (ICP).
                 </li>
-                <li className="text-white text-lg list-decimal">
+                <li className="text-gray-400 text-lg list-decimal">
                   Multichannel Outreach: We use a mix of SEO, targeted social
                   ads, and proprietary data to find prospects where they live.
                 </li>
-                <li className="text-white text-lg list-decimal">
+                <li className="text-gray-400 text-lg list-decimal">
                   Vetting & Verification: We filter out the &quot;window
                   shoppers&quot; so your calendar is only filled with serious
                   inquiries.

@@ -193,15 +193,15 @@ export default function SetupProcess() {
                   </div>
 
                   <div className="w-[30%]">
-                    <h3 className="2xl:text-xl md:text-xl sm:text-xl text-xl font-bold w-fit text-white">
+                    <h3 className="text-2xl font-medium w-fit text-white">
                       {feature.title}
                     </h3>
 
                     <div className="grid gap-2 mt-4">
-                      <h6 className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md text-white">
+                      <h6 className="text-lg text-gray-400">
                         {feature.content_one}
                       </h6>
-                      <h6 className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md text-white">
+                      <h6 className="text-lg text-gray-400">
                         {feature.content_two}
                       </h6>
                     </div>
@@ -244,7 +244,7 @@ export function SetupProcessMobile() {
               <div key={feature.id} className="animate-fade">
                 <div className="grid items-center gap-10">
                   <div className="grid gap-5">
-                    <h3 className="2xl:text-xl md:text-xl sm:text-xl text-xl font-bold w-fit text-white">
+                    <h3 className="2xl:text-xl md:text-xl sm:text-xl text-xl font-medium w-fit text-white">
                       {feature.title}
                     </h3>
                     <div className="2xl:p-6 lg:p-6 p-3 bg-amber-50/10 rounded-2xl w-fit">
@@ -263,10 +263,10 @@ export function SetupProcessMobile() {
 
                   <div>
                     <div className="grid gap-2">
-                      <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md text-white">
+                      <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md text-gray-400">
                         {feature.content_one}
                       </p>
-                      <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md text-white">
+                      <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md text-gray-400">
                         {feature.content_two}
                       </p>
                     </div>

@@ -42,14 +42,14 @@ export default function Home() {
       <Container>
         <div className="grid 2xl:gap-20 md:gap-15 sm:gap-10 gap-10 justify-center 2xl:mt-60 mt-40">
           <div className="grid gap-6">
-            <h1 className="text-center leading-none font-bold 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-4xl text-3xl text-white">
-              Done-for-you email infrastructure for lead gen teams&nbsp;—&nbsp;{" "}
-              <span className="text-gray-300/60">without burning domains.</span>
+            <h1 className="text-center 2xl:text-[80px]/24 lg:text-6xl md:text-4xl sm:text-3xl text-3xl text-white">
+              High-volume email infrastructure, Built for{" "}
+              <span className="text-gray-400">long-term deliverability.</span>
             </h1>
 
             <Content
               style="text-center"
-              content="We automate subdomain creation, DNS configuration, and inbox infrastructure at scale—so you can send high volumes, protect deliverability, and save significant time and costs."
+              content="Automated email infrastructure that scales without risking deliverability."
             />
             <div className="2xl:flex md:grid sm:grid grid gap-4 justify-center">
               <Button
@@ -59,12 +59,13 @@ export default function Home() {
                 align="flex justify-center"
               ></Button>
 
-              <button
-                className="secondary-btn flex items-center gap-2 rounded-md 2xl:px-6 lg:px-6 md:px-6 sm:px-4 px-4 2xl:pt-3 lg:pt-3 md:pt-3 sm:pt-3 pt-3 2xl:pb-2 lg:pb-2 md:pb-2 sm:pb-2 pb-2 2xl:text-md lg:text-md md:text-md sm:text-sm text-sm font-medium"
-                onClick={handleClickedOpen}
-              >
-                View Infrastructure Setup
-              </button>
+              <Button
+                title="View Infrastructure Setup"
+                style="secondary-btn"
+                link=""
+                align=""
+                click={handleClickedOpen}
+              ></Button>
             </div>
           </div>
 
@@ -121,7 +122,7 @@ export default function Home() {
       <Container>
         <div className="grid 2xl:gap-20 lg:gap-15 md:gap-15 sm:gap-15 gap-10 pb-10 pt-20">
           <div className="flex gap-6 items-center">
-            <h1 className="text-white text-start leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl">
+            <h1 className="text-white text-start leading-normal font-medium 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl">
               Our Setup Process
             </h1>
 
@@ -144,33 +145,33 @@ export default function Home() {
           <div className="grid justify-between items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 gap-5">
             <div>
               <div className="flex gap-6 items-center">
-                <h1 className="text-start leading-normal font-black 2xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl text-2xl text-white">
+                <h1 className="text-start leading-normal font-medium 2xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl text-2xl text-white">
                   Why This Works
                 </h1>
               </div>
               <div className="grid 2xl:mt-6 md:mt-4 sm:mt-2 mt-2">
-                <ul>
+                <ul className="grid gap-2 mt-2">
                   <li className="2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
-                    <Image src={Checked} alt="Checked" height={20} />
-                    <span className="mt-2 text-white">
+                    <Image src={Checked} alt="Checked" height={18} />
+                    <span className="text-gray-400">
                       One domain instead of hundreds
                     </span>
                   </li>
                   <li className="2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
-                    <Image src={Checked} alt="Checked" height={20} />
-                    <span className="mt-2 text-white">
+                    <Image src={Checked} alt="Checked" height={18} />
+                    <span className="text-gray-400">
                       Automation-based subdomain & DNS setup
                     </span>
                   </li>
                   <li className="2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
-                    <Image src={Checked} alt="Checked" height={20} />
-                    <span className="mt-2 text-white">
+                    <Image src={Checked} alt="Checked" height={18} />
+                    <span className="text-gray-400">
                       Deliverability-first architecture
                     </span>
                   </li>
                   <li className="2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
-                    <Image src={Checked} alt="Checked" height={20} />
-                    <span className="mt-2 text-white">
+                    <Image src={Checked} alt="Checked" height={18} />
+                    <span className="text-gray-400">
                       Built for agencies and high-volume senders
                     </span>
                   </li>
@@ -233,7 +234,7 @@ export default function Home() {
 
         <div className="py-20 grid items-center 2xl:gap-20 lg:gap-15 md:gap-15 sm:gap-10 gap-10">
           <div className="flex gap-6 items-center">
-            <h1 className="text-start leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl text-white">
+            <h1 className="text-start leading-normal font-medium 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl text-white">
               Services Overview
             </h1>
 
@@ -286,7 +287,7 @@ export default function Home() {
           <div className="grid justify-between items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 gap-5">
             <div>
               <div className="flex gap-6 items-center">
-                <h1 className="text-start leading-normal font-black 2xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl text-2xl text-white">
+                <h1 className="text-start leading-normal font-medium 2xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl text-2xl text-white">
                   Partnership / Commission-Based Deals
                 </h1>
               </div>
@@ -363,7 +364,7 @@ export default function Home() {
             <div className="grid justify-center items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 2xl:grid-cols-1 gap-5">
               <div className="grid 2xl:gap-10 md:gap-7 sm:gap-7 gap-7">
                 <div className="flex gap-6 justify-center items-center">
-                  <h1 className="text-white 2xl:text-center md:text-start sm:text-start text-start leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl">
+                  <h1 className="text-white 2xl:text-center md:text-start sm:text-start text-start leading-normal font-medium 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl">
                     How do we get started?
                   </h1>
 

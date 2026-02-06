@@ -35,7 +35,7 @@ export default function CardBox({
           <h3 className="2xl:text-2xl md:text-xl sm:text-xl text-xl font-medium w-fit mt-3 text-white">
             {Title}
           </h3>
-          <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md text-white">
+          <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md text-gray-400">
             {Content}
           </h5>
         </div>

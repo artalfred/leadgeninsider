@@ -4,6 +4,13 @@ import "./globals.css";
 import Footer from "./footer";
 import Header from "./header";
 import ScrollToTop from "./components/scrollToTop";
+import { Inter_Tight } from "next/font/google";
+
+const interTight = Inter_Tight({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-inter-tight",
+});
 
 export const metadata: Metadata = {
   title: "LeadGen Insider | Email infrastructure for lead gen teams",
@@ -18,11 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body
+        className={`${interTight.className} antialiased`}
+        suppressHydrationWarning
+      >
         <ScrollToTop />
         <Header />
-
-        {/* <Image src={Background} alt="home" className="bg-video" /> */}
 
         <video
           controls={false}

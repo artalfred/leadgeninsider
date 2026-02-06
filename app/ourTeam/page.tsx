@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function Team() {
   return (
     <div className="max-w-7xl mx-auto">
-      <div className="grid gap-20 justify-center 2xl:mt-60 mt-40  2xl:px-0 md:px-6 sm:px-6 px-4">
+      <div className="grid gap-20 justify-center 2xl:mt-60 mt-40  2xl:px-30 md:px-6 sm:px-6 px-4">
         <div className="grid 2xl:gap-5 md:gap-4 sm:gap-3 gap-2">
           <div className="flex justify-center 2xl:gap-6 md:gap-4 sm:gap-4 gap-4 items-center">
             <h1 className="leading-normal font-medium 2xl:text-xl lg:text-xl md:text-xl sm:text-lg text-lg text-white">
@@ -24,10 +24,10 @@ export default function Team() {
               <div className="h-0.5 bg-green-600 2xl:w-4 md:w-3 w-3"></div>
             </div>
           </div>
-          <h1 className="text-white text-center 2xl:leading-none md:leading-normal sm:leading-8 leading-8 font-bold 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl">
+          <h1 className="text-white text-center 2xl:leading-none md:leading-normal sm:leading-8 leading-8 font-medium 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl">
             Meet the Experts Behind Your Business Success
           </h1>
-          <h5 className="text-white text-center 2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md 2xl:px-30 lg:px-30 md:px-20 sm:px-15 px-0">
+          <h5 className="text-gray-400 text-center 2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md 2xl:px-30 lg:px-30 md:px-20 sm:px-15 px-0">
             LeadGenInsider was built to solve a problem most lead generation
             teams face too late— &nbsp;
             <span className="text-green-600">
@@ -99,7 +99,7 @@ export default function Team() {
                 </div>
 
                 <ul className="grid gap-1">
-                  <h5 className="text-sm text-white">
+                  <h5 className="text-md text-gray-400">
                     Lester specializes in building and scaling high-volume
                     outbound email systems for B2B companies and lead generation
                     agencies. With deep expertise in{" "}
@@ -115,23 +115,23 @@ export default function Team() {
                   <h3 className="2xl:text-xl md:text-xl sm:text-xl text-xl font-medium w-fit mt-3 text-white">
                     Expertise:
                   </h3>
-                  <li className="text-md gap-3 mt-2 text-white">
+                  <li className="text-md gap-3 mt-2 text-gray-400">
                     <span className="mr-4">✔</span>
                     B2B lead generation & outbound email strategy
                   </li>
-                  <li className="text-md gap-3 text-white">
+                  <li className="text-md gap-3 text-gray-400">
                     <span className="mr-4">✔</span>
                     Google Workspace & inbox management
                   </li>
-                  <li className="text-md gap-3 text-white">
+                  <li className="text-md gap-3 text-gray-400">
                     <span className="mr-4">✔</span>
                     DNS, domains, SPF, DKIM, DMARC
                   </li>
-                  <li className="text-md gap-3 text-white">
+                  <li className="text-md gap-3 text-gray-400">
                     <span className="mr-4">✔</span>
                     Email campaign setup & optimization
                   </li>
-                  <li className="text-md gap-3 text-white">
+                  <li className="text-md gap-3 text-gray-400">
                     <span className="mr-4">✔</span>
                     Email copywriting & deliverability
                   </li>
@@ -167,7 +167,7 @@ export default function Team() {
                 </div>
 
                 <ul className="grid gap-1">
-                  <h5 className="text-sm text-white">
+                  <h5 className="text-md text-gray-400">
                     Art Alfred focuses on the technical backbone behind scalable
                     lead generation systems. As a{" "}
                     <span className="text-green-500">
@@ -182,23 +182,23 @@ export default function Team() {
                   <h3 className="2xl:text-xl md:text-xl sm:text-xl text-xl font-medium w-fit mt-3 text-white">
                     Expertise:
                   </h3>
-                  <li className="text-md gap-3 mt-2 text-white">
+                  <li className="text-md gap-3 mt-2 text-gray-400">
                     <span className="mr-4">✔</span>
                     Web development (conversion-focused)
                   </li>
-                  <li className="text-md gap-3 text-white">
+                  <li className="text-md gap-3 text-gray-400">
                     <span className="mr-4 ">✔</span>
                     Lead generation systems & infrastructure
                   </li>
-                  <li className="text-md gap-3 text-white">
+                  <li className="text-md gap-3 text-gray-400">
                     <span className="mr-4">✔</span>
                     Python automation & scripting
                   </li>
-                  <li className="text-md gap-3 text-white">
+                  <li className="text-md gap-3 text-gray-400">
                     <span className="mr-4">✔</span>
                     Bulk subdomain & DNS automation
                   </li>
-                  <li className="text-md gap-3 text-white">
+                  <li className="text-md gap-3 text-gray-400">
                     <span className="mr-4">✔</span>
                     Email platform integrations (Smartlead, Bison)
                   </li>

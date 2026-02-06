@@ -26,10 +26,10 @@ export default function Blog() {
               <div className="h-0.5 bg-green-600 2xl:w-4 md:w-3 w-3"></div>
             </div>
           </div>
-          <h1 className="text-white text-center 2xl:leading-none md:leading-normal sm:leading-8 leading-8 font-bold 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-3xl">
+          <h1 className="text-white text-center 2xl:leading-none md:leading-normal sm:leading-8 leading-8 font-medium 2xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-3xl">
             Insights & Updates
           </h1>
-          <h5 className="text-white text-center 2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md 2xl:px-30 lg:px-30 md:px-20 sm:px-15 px-0">
+          <h5 className="text-gray-400 text-center 2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md 2xl:px-30 lg:px-30 md:px-20 sm:px-15 px-0">
             Thoughtful perspectives, product updates, and practical guidance for
             teams that care about &nbsp;
             <span className="text-green-500">
@@ -106,8 +106,10 @@ export default function Blog() {
                     <h5 className="2xl:text-4xl lg:text-2xl md:text-2xl sm:text-2xl text-2xl font-normal text-white">
                       {blog.title}
                     </h5>
-                    <h5 className="text-sm text-white">{blog.description}</h5>
-                    <span className="rounded-full text-bold bg-white shadow-2xl mt-4   text-gray-800 px-3 pt-3 pb-2 text-xs w-fit">
+                    <h5 className="text-md text-gray-400">
+                      {blog.description}
+                    </h5>
+                    <span className="rounded-full text-bold bg-white shadow-2xl mt-4   text-gray-800 px-5 pt-3 pb-3 text-xs w-fit">
                       {blog.tag}
                     </span>
                   </div>

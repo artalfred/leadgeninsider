@@ -76,9 +76,9 @@ export default function Footer() {
                 </div>
 
                 <ul className="grid gap-2">
-                  <Link href="/">
+                  <Link href="/blog">
                     <li className="w-fit text-lg font-normal text-gray-400 hover:text-gray-200 transition-all ease-in-out duration-200">
-                      Case Studies
+                      Blog
                     </li>
                   </Link>
                   <Link href="/faqs">
