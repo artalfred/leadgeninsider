@@ -7,7 +7,7 @@ export default function Footer() {
     <div>
       <div className="2xl:p-10 md:p-4 sm:p-4 p-4 mt-30">
         <div
-          className="rounded-2xl 2xl:px-30 md:px-15 sm:px-7 px-7 2xl:py-15 py-7 bg-sky-700/30 backdrop-blur-2xl"
+          className="rounded-2xl 2xl:px-0 md:px-15 sm:px-7 px-7 2xl:py-15 py-7 bg-sky-700/30"
           style={{
             boxShadow:
               "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
