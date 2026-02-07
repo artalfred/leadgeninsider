@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description:
     "We automate subdomain creation, DNS configuration, and inbox infrastructure at scale—so you can send high volumes, protect deliverability, and save significant time and costs.",
   icons: {
-    icon: "@/app/favicon.ico", // Points to public/favicon.ico
+    icon: "/app/favicon.ico", // Points to public/favicon.ico
   },
 };
 
