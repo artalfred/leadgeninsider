@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "LeadGen Insider | Email infrastructure for lead gen teams",
   description:
     "We automate subdomain creation, DNS configuration, and inbox infrastructure at scale—so you can send high volumes, protect deliverability, and save significant time and costs.",
+  icons: {
+    icon: "/favicon.ico", // Points to public/favicon.ico
+  },
 };
 
 export default function RootLayout({
