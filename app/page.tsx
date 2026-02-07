@@ -39,50 +39,79 @@ export default function Home() {
 
   return (
     <>
-      <Container>
-        <div className="grid 2xl:gap-20 md:gap-15 sm:gap-10 gap-10 justify-center 2xl:mt-60 mt-40">
-          <div className="grid gap-6">
-            <h1 className="text-center 2xl:text-[80px]/24 lg:text-6xl md:text-4xl sm:text-3xl text-3xl text-white">
-              High-volume email infrastructure, Built for{" "}
-              <span className="text-gray-400">long-term deliverability.</span>
-            </h1>
-
-            <Content
-              style="text-center"
-              content="Automated email infrastructure that scales without risking deliverability."
+      <div className="max-w-7xl mx-auto 2xl:pt-0 md:py-0 sn:py-0 py-0 relative isolate overflow-hidden lg:overflow-visible lg:px-0 sm:px-4 px-4 grid 2xl:gap-20 md:gap-15 sm:gap-10 gap-10 justify-center 2xl:mt-60 mt-40">
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <svg
+            aria-hidden="true"
+            className="absolute top-0 left-[max(50%,25rem)] h-256 w-512 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-gray-800"
+          >
+            <defs>
+              <pattern
+                x="50%"
+                y={-1}
+                id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+                width={200}
+                height={200}
+                patternUnits="userSpaceOnUse"
+              >
+                <path d="M100 200V.5M.5 .5H200" fill="none" />
+              </pattern>
+            </defs>
+            <svg x="50%" y={-1} className="overflow-visible fill-gray-800/50">
+              <path
+                d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                strokeWidth={0}
+              />
+            </svg>
+            <rect
+              fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"
+              width="100%"
+              height="100%"
+              strokeWidth={0}
             />
-            <div className="2xl:flex md:grid sm:grid grid gap-4 justify-center">
-              <Button
-                title="Get Started"
-                style="primary-btn"
-                link="/contact"
-                align="flex justify-center"
-              ></Button>
+          </svg>
+        </div>
+        <div className="grid gap-6">
+          <h1 className="text-center 2xl:text-[80px]/24 lg:text-6xl md:text-4xl sm:text-3xl text-3xl text-white">
+            High-volume email infrastructure, Built for{" "}
+            <span className="text-gray-400">long-term deliverability.</span>
+          </h1>
 
-              <Button
-                title="View Infrastructure Setup"
-                style="secondary-btn"
-                link=""
-                align=""
-                click={handleClickedOpen}
-              ></Button>
-            </div>
+          <Content
+            style="text-center"
+            content="Automated email infrastructure that scales without risking deliverability."
+          />
+          <div className="2xl:flex md:grid sm:grid grid gap-4 justify-center">
+            <Button
+              title="Get Started"
+              style="primary-btn"
+              link="/contact"
+              align="flex justify-center"
+            ></Button>
+
+            <Button
+              title="View Infrastructure Setup"
+              style="secondary-btn"
+              link=""
+              align=""
+              click={handleClickedOpen}
+            ></Button>
           </div>
+        </div>
 
-          <div className="grid gap-6 justify-center">
-            <div className="2xl:p-6 lg:p-6 p-3 bg-amber-50/10 rounded-2xl flex w-fit">
-              <div className="rounded-2xl overflow-hidden">
-                <iframe
-                  src="https://www.youtube.com/embed/zLxOQpdzuAI"
-                  className="2xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-full 2xl:h-125 lg:h-115 md:h-100 h-42"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
+        <div className="grid gap-6 justify-center">
+          <div className="2xl:p-6 lg:p-6 p-3 bg-amber-50/10 rounded-2xl flex w-fit">
+            <div className="rounded-2xl overflow-hidden">
+              <iframe
+                src="https://www.youtube.com/embed/zLxOQpdzuAI"
+                className="2xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-full 2xl:h-125 lg:h-115 md:h-100 h-42"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
-      </Container>
+      </div>
 
       {/* INFRASTRUCTURE SETUP */}
       <div

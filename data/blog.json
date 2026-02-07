@@ -1,6 +1,6 @@
 [
   {
-    "id": 2,
+    "id": 1,
     "link": "scaling-outbound-without-infrastructure-burn",
     "title": "Scaling Outbound Without Infrastructure Burn",
     "tag": "Infrastructure",
@@ -9,7 +9,7 @@
     "description": "Lead generation teams usually face a hard ceiling. You scale your outbound, and suddenly: domains get blacklisted, DNS configurations become a nightmare, and you’re spending more time rebuilding inboxes than closing deals."
   },
   {
-    "id": 1,
+    "id": 2,
     "link": "building-stable-outbound-infrastructure",
     "title": "Building Stable Outbound Infrastructure",
     "tag": "Deliverability",

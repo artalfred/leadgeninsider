@@ -4,7 +4,7 @@ export default function FAQAccordion() {
   return (
     <div className="max-w-7xl mx-auto space-y-4 2xl:px-40 lg:px-30 md:px-20 sm:px-4 px-4 2xl:mt-60 md:mt-50 sm:mt-50 mt-50">
       <div className="grid justify-center items-center 2xl:pb-20 md:pb-15 sm:pb-10 pb-10">
-        <h1 className="text-center leading-normal font-black 2xl:text-5xl lg:text-5xl md:text-5xl sm:text-2xl text-2xl text-white">
+        <h1 className="text-center leading-normal font-medium 2xl:text-6xl lg:text-5xl md:text-5xl sm:text-2xl text-2xl text-white">
           LeadGensInsider Onboarding
         </h1>
         <h1 className="mt-2 2xl:text-xl md:text-xl sm:text-lg text-lg text-center 2xl:w-240 md:w-full w-full text-white">
