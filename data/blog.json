@@ -1,7 +1,7 @@
 [
   {
     "id": 2,
-    "slug": "scaling-outbound-without-infrastructure-burn",
+    "link": "scaling-outbound-without-infrastructure-burn",
     "title": "Scaling Outbound Without Infrastructure Burn",
     "tag": "Infrastructure",
     "date": "February 05, 2026",
@@ -10,7 +10,7 @@
   },
   {
     "id": 1,
-    "slug": "building-stable-outbound-infrastructure",
+    "link": "building-stable-outbound-infrastructure",
     "title": "Building Stable Outbound Infrastructure",
     "tag": "Deliverability",
     "date": "February 01, 2026",

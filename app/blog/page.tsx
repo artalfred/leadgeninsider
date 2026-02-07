@@ -77,7 +77,7 @@ export default function Blog() {
           <div className="grid items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 gap-10">
             {blogs.map((blog) => (
               <Link
-                href={`/blog/${blog.slug}`}
+                href={`/blog/${blog.link}`}
                 key={blog.id}
                 className="overflow-hidden"
               >
