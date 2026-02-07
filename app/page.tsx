@@ -392,44 +392,28 @@ export default function Home() {
           <div className="grid">
             <div className="grid justify-center items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 2xl:grid-cols-1 gap-5">
               <div className="grid 2xl:gap-10 md:gap-7 sm:gap-7 gap-7">
-                <div className="flex gap-6 justify-center items-center">
-                  <h1 className="text-white 2xl:text-center md:text-start sm:text-start text-start leading-normal font-medium 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl">
-                    How do we get started?
+                <div className="grid gap-6 bg-amber-50/10 rounded-2xl w-full 2xl:px-30 md:px-15 sm:px-4 px-4 py-14">
+                  <div className="">
+                    <h1 className="text-white text-center leading-normal font-medium 2xl:text-4xl lg:text-4xl md:text-3xl sm:text-3xl text-3xl">
+                      How do we get started?
+                    </h1>
+                  </div>
+
+                  <h1 className="text-xl text-gray-400 text-center">
+                    Stop guessing and start growing. Schedule a brief strategy
+                    session to see how LeadGenInsider can automate your outbound
+                    infrastructure and scale your lead flow today.
                   </h1>
 
-                  <div className="grid 2xl:gap-3 md:gap-2 gap-2 2xl:mt-2 md:mt-2 sm:mt-2 mt-0">
-                    <div className="h-0.5 bg-green-600 2xl:w-25 md:w-20 w-10"></div>
-                    <div className="h-0.5 bg-green-600 2xl:w-10 md:w-8 w-4"></div>
-                  </div>
-                </div>
-
-                <div className="grid gap-6 justify-center">
-                  <div className="2xl:p-6 lg:p-6 p-3 bg-amber-50/10 rounded-2xl flex w-fit">
-                    <div className="rounded-2xl overflow-hidden">
-                      <iframe
-                        src="https://www.youtube.com/embed/zTwvnl77HPw"
-                        className="2xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-full 2xl:h-125 lg:h-115 md:h-100 h-42"
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        allowFullScreen
-                      />
+                  <div className="grid justify-center gap-4">
+                    <div className="2xl:flex md:grid sm:grid grid 2xl:gap-5 md:gap-3 sm:gap-3 gap-3">
+                      <Button
+                        title="Book A Call"
+                        style="primary-btn mt-4"
+                        link="/contact"
+                        align="flex justify-center"
+                      ></Button>
                     </div>
-                  </div>
-                </div>
-
-                <div className="grid justify-center gap-4">
-                  <div className="2xl:flex md:grid sm:grid grid 2xl:gap-5 md:gap-3 sm:gap-3 gap-3">
-                    <Button
-                      title="Book A Call"
-                      style="primary-btn mt-4"
-                      link="/contact"
-                      align="flex justify-center"
-                    ></Button>
-                    <Button
-                      title="Frequently Asked Questions"
-                      style="secondary-btn mt-4"
-                      link="/faqs"
-                      align="flex justify-center"
-                    ></Button>
                   </div>
                 </div>
               </div>
