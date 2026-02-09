@@ -1,6 +1,13 @@
 [
   {
-    "id": 1,
+    "title": "How Subdomains Can Scale Your Lead Generation Without Breaking the Bank",
+    "link": "how-subdomains-can-scale-your-lead-generation-without-breaking-the-bank",
+    "tag": "B2B Outreach",
+    "date": "February 10, 2026",
+    "image": "/Blog/Blog_3.svg",
+    "description": "In lead generation, scale usually comes with a hidden tax: more domains, more inboxes, more subscriptions, and more overhead. Many teams assume that to expand outreach safely, they need to keep buying new domains..."
+  },
+  {
     "link": "scaling-outbound-without-infrastructure-burn",
     "title": "Scaling Outbound Without Infrastructure Burn",
     "tag": "Infrastructure",
@@ -9,7 +16,6 @@
     "description": "Lead generation teams usually face a hard ceiling. You scale your outbound, and suddenly: domains get blacklisted, DNS configurations become a nightmare, and you’re spending more time rebuilding inboxes than closing deals."
   },
   {
-    "id": 2,
     "link": "building-stable-outbound-infrastructure",
     "title": "Building Stable Outbound Infrastructure",
     "tag": "Deliverability",

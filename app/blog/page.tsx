@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "LeadGen Insider | Insights & Updates",
+  title: "Blog | Insights & Updates",
   description:
     "Thoughtful perspectives, product updates, and practical guidance for teams that care about  stability, control, and long-term deliverability.",
 };
@@ -78,7 +78,7 @@ export default function Blog() {
             {blogs.map((blog) => (
               <Link
                 href={`/blog/${blog.link}`}
-                key={blog.id}
+                key={blog.title}
                 className="overflow-hidden"
               >
                 <div
@@ -103,7 +103,7 @@ export default function Blog() {
                       <span>&#183;</span>
                       <span>6 min read</span>
                     </div>
-                    <h5 className="2xl:text-4xl lg:text-2xl md:text-2xl sm:text-2xl text-2xl font-normal text-white">
+                    <h5 className="2xl:text-3xl md:text-2xl sm:text-2xl text-2xl font-normal text-white">
                       {blog.title}
                     </h5>
                     <h5 className="text-md text-gray-400">

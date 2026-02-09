@@ -2,7 +2,7 @@ import Button from "@/app/components/Button";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "LeadGen Insider | Pricing",
+  title: "Pricing | LeadGen Insider",
   description: "Inbox Infrastructure Plan | The “Growth“ Infrastructure Plan",
 };
 

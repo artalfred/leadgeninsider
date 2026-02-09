@@ -5,7 +5,7 @@ import Art from "@/public/Team/Art.jpg";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "LeadGen Insider | Our Team",
+  title: "Our Team | Meet our team",
   description: "Meet the Experts Behind Your Business Success",
 };
 

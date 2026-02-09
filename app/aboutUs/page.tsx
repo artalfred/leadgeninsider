@@ -8,7 +8,7 @@ import FAQAccordion from "../faqs/page";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About LeadGenInsider",
+  title: "About Us | Learn More About LeadGenInsider",
   description: "Built to Scale Outbound — Without Burning Your Infrastructure",
 };
 

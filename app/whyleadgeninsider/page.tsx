@@ -12,7 +12,6 @@ import WebDevelopmentIcon from "@/public/Icon/WebDevelopmentIcon.svg";
 import DomainSetup from "@/public/Icon/DomainSetup.svg";
 import WhyUsCycle from "@/public/WhyUs/Cycle.jpeg";
 import { Metadata } from "next";
-import Content from "../components/Content";
 
 export const metadata: Metadata = {
   title: "Why LeadGenInsider | A Smarter Way to Scale Outbound",
