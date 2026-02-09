@@ -107,8 +107,8 @@ export default function FAQAccordion() {
           </button>
 
           {openIndex === index && (
-            <div className="pb-5 text-gray-400 grid gap-2">
-              <p>{faq.answer}</p>
+            <div className="pb-5 text-gray-300 grid gap-2">
+              <h1 className="text-md">{faq.answer}</h1>
             </div>
           )}
         </div>
