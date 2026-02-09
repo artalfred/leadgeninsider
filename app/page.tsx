@@ -99,13 +99,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid gap-6 justify-center">
-          <div className="2xl:p-6 lg:p-6 p-3 bg-amber-50/10 rounded-2xl flex w-fit">
-            <div className="rounded-2xl overflow-hidden">
+        <div className="grid place-items-center gap-6">
+          <div className="p-3 lg:p-6 bg-amber-50/10 rounded-2xl w-full max-w-5xl">
+            <div className="aspect-video w-full overflow-hidden rounded-2xl">
               <iframe
-                src="https://www.youtube.com/embed/zLxOQpdzuAI"
-                className="2xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-full 2xl:h-125 lg:h-115 md:h-100 h-42"
-                allow="autoplay; fullscreen; picture-in-picture"
+                src="https://www.youtube.com/embed/u_UIlRaA3x0?rel=0&modestbranding=0"
+                className="w-full h-full"
+                title="YouTube video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                 allowFullScreen
               />
             </div>

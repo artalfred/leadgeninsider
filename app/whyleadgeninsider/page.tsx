@@ -48,13 +48,15 @@ export default function whyleadgeninsider() {
             </span>
           </h5>
 
-          <div className="grid gap-6 justify-center 2xl:mt-0 md:mt-3 sm:mt-3">
-            <div className="2xl:p-6 lg:p-6 p-3 bg-amber-50/10 rounded-2xl flex w-fit">
-              <div className="rounded-2xl overflow-hidden">
+          <div className="grid place-items-center gap-6">
+            <div className="p-3 lg:p-6 bg-amber-50/10 rounded-2xl w-full max-w-5xl">
+              <div className="aspect-video w-full overflow-hidden rounded-2xl">
                 <iframe
-                  src="https://www.youtube.com/embed/zTwvnl77HPw"
-                  className="2xl:w-4xl lg:w-3xl md:w-2xl sm:w-xl w-full 2xl:h-126 lg:h-115 md:h-100 h-42"
-                  allow="autoplay; fullscreen; picture-in-picture"
+                  src="https://www.youtube.com/embed/zTwvnl77HPw?rel=0&modestbranding=0"
+                  className="w-full h-full"
+                  title="YouTube video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                   allowFullScreen
                 />
               </div>
@@ -114,7 +116,7 @@ export default function whyleadgeninsider() {
               Content="We build infrastructure that teams can rely on month after month—not setups that need constant rebuilding. Our systems prioritize consistency, recovery, and controlled scaling so outreach remains stable even as volume grows."
               Icon={Domain}
               ImageIcon={DomainSetup}
-              Style="bg-slate-900/60"
+              Style="bg-amber-50/10"
               Link="contact"
             />
 
@@ -123,7 +125,7 @@ export default function whyleadgeninsider() {
               Content="Most providers sell inboxes. We deliver a complete outbound foundation—one that accounts for reputation management, sender behavior, rotation, and replacement from day one."
               Icon={InboxManagementIcon}
               ImageIcon={InboxManagement}
-              Style="bg-slate-900/60"
+              Style="bg-amber-50/10"
               Link="contact"
             />
             <CardBox
@@ -131,7 +133,7 @@ export default function whyleadgeninsider() {
               Content="We actively operate and maintain large-scale outbound systems ourselves. Everything we offer is based on real-world usage, not theory, templates, or resale packages."
               Icon={CampaignIcon}
               ImageIcon={Campaign}
-              Style="bg-slate-900/60"
+              Style="bg-amber-50/10"
               Link="contact"
             />
             <CardBox
@@ -139,7 +141,7 @@ export default function whyleadgeninsider() {
               Content="Scaling outbound shouldn’t feel fragile. Our approach allows teams to increase volume methodically, replace weak inboxes quickly, and avoid disruptions that stall campaigns or revenue."
               Icon={WebDevelopmentIcon}
               ImageIcon={WebDevelopment}
-              Style="bg-slate-900/60"
+              Style="bg-amber-50/10"
               Link="contact"
             />
             <CardBox
@@ -147,7 +149,7 @@ export default function whyleadgeninsider() {
               Content="You’re not handed a setup and left alone. We stay involved—monitoring inbox health, addressing issues early, and keeping your infrastructure aligned with your sending goals."
               Icon={WebDevelopmentIcon}
               ImageIcon={WebDevelopment}
-              Style="bg-slate-900/60"
+              Style="bg-amber-50/10"
               Link="contact"
             />
           </div>
