@@ -95,19 +95,19 @@ export default function FAQAccordion() {
       </div>
 
       {FAQS.map((faq, index) => (
-        <div key={index} className=" bg-gray-900/60 rounded-xl overflow-hidden">
+        <div key={index} className="overflow-hidden border-b border-amber-100">
           <button
             onClick={() => toggle(index)}
-            className="w-full flex justify-between items-center p-5 text-left font-medium text-white"
+            className="w-full flex justify-between items-center pt-2 pb-6 px-0 text-left font-medium text-white"
           >
-            <span className="font-normal cursor-pointer 2xl:text-lg md:text-sm sm:text-sm text-sm">
+            <span className="font-normal cursor-pointer 2xl:text-xl md:text-md sm:text-md text-md">
               {faq.question}
             </span>
             <span className="text-xl">{openIndex === index ? "−" : "+"}</span>
           </button>
 
           {openIndex === index && (
-            <div className="px-5 pb-5 text-gray-400 grid gap-2">
+            <div className="pb-5 text-gray-400 grid gap-2">
               <p>{faq.answer}</p>
             </div>
           )}
