@@ -149,22 +149,24 @@ export default function SetupProcess() {
           <button
             key={feature.id}
             onClick={() => setActiveFeature(feature.id)}
-            className={`px-3 py-3 rounded-xl font-medium transition flex items-center justify-center w-full
-              ${
-                activeFeature === feature.id ?
-                  "bg-slate-600/30 text-white"
-                : "bg-none text-gray-800 hover:bg-slate-600/30"
-              }
-            `}
+            className="px-3 py-3 rounded-xl font-medium transition flex items-center justify-center w-full hover:bg-slate-500/10 cursor-pointer"
           >
             <div className="grid gap-4 justify-center items-center">
               <div className="flex justify-center">
-                <div className="bg-green-700 p-3 rounded-lg w-fit">
-                  <Image src={feature.icon} alt="Close" height={40} />
+                <div
+                  className={`p-3 rounded-lg w-fit bg-slate-600/10
+              ${
+                activeFeature === feature.id ?
+                  "bg-slate-600/50 text-white"
+                : "bg-none text-gray-800 "
+              }
+            `}
+                >
+                  <Image src={feature.icon} alt="Close" height={50} />
                 </div>
               </div>
 
-              <h3 className="2xl:text-lg md:text-lg sm:text-sm text-sm mt-2 font-medium text-center text-white">
+              <h3 className="2xl:text-xl md:text-lg sm:text-sm text-sm mt-2 font-medium text-center text-white">
                 {feature.title}
               </h3>
             </div>
@@ -173,7 +175,7 @@ export default function SetupProcess() {
       </div>
 
       {/* CONTENT */}
-      <div>
+      <div className="mt-20">
         {FEATURES.map(
           (feature) =>
             activeFeature === feature.id && (
