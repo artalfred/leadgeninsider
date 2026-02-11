@@ -4,6 +4,7 @@ import Button from "./Button";
 type Props = {
   Icon: string;
   ImageIcon: string;
+  HeadTitle: string;
   Title: string;
   Content: string;
   Style: string;
@@ -13,6 +14,7 @@ type Props = {
 export default function CardBox({
   Icon,
   ImageIcon,
+  HeadTitle,
   Title,
   Content,
   Style,
@@ -24,17 +26,19 @@ export default function CardBox({
         className={`p-6 ${Style} rounded-2xl grid gap-4 align-middle`}
         style={{ boxShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px" }}
       >
-        <div className="Flex items-center justify-between w-fit mt-2 mr-2">
-          <Image src={Icon} alt="Inboxes" height={50} />
-        </div>
         <div className="flex absolute top-0 right-0 items-center justify-between w-fit opacity-20 mt-2 mr-2">
           <Image src={ImageIcon} alt="Inboxes" height={160} />
         </div>
 
         <div className="grid gap-3">
-          <h3 className="2xl:text-2xl md:text-xl sm:text-xl text-xl font-medium w-fit mt-3 text-white">
-            {Title}
-          </h3>
+          <div className="grid gap-2">
+            <h1 className="2xl:text-4xl md:text-2xl sm:text-2xl text-2xl font-medium w-fit mt-3 text-gray-200">
+              {HeadTitle}
+            </h1>
+            <h3 className="2xl:text-xl md:text-xl sm:text-xl text-xl font-normal w-fit text-gray-300">
+              {Title}
+            </h3>
+          </div>
           <h5 className="2xl:text-lg lg:text-lg md:text-lg sm:text-md text-md text-gray-400">
             {Content}
           </h5>
