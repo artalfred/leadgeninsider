@@ -111,6 +111,7 @@ export default function whyleadgeninsider() {
 
           <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 2xl:grid-cols-1 gap-6">
             <CardBox
+              HeadTitle=""
               Title="Designed for Operational Stability"
               Content="We build infrastructure that teams can rely on month after month—not setups that need constant rebuilding. Our systems prioritize consistency, recovery, and controlled scaling so outreach remains stable even as volume grows."
               Icon={Domain}
@@ -120,6 +121,7 @@ export default function whyleadgeninsider() {
             />
 
             <CardBox
+              HeadTitle=""
               Title="Infrastructure, Not Just Inboxes"
               Content="Most providers sell inboxes. We deliver a complete outbound foundation—one that accounts for reputation management, sender behavior, rotation, and replacement from day one."
               Icon={InboxManagementIcon}
@@ -128,6 +130,7 @@ export default function whyleadgeninsider() {
               Link="contact"
             />
             <CardBox
+              HeadTitle=""
               Title="Built by Practitioners, Not Resellers"
               Content="We actively operate and maintain large-scale outbound systems ourselves. Everything we offer is based on real-world usage, not theory, templates, or resale packages."
               Icon={CampaignIcon}
@@ -136,6 +139,7 @@ export default function whyleadgeninsider() {
               Link="contact"
             />
             <CardBox
+              HeadTitle=""
               Title="Predictable Scaling Without Chaos"
               Content="Scaling outbound shouldn’t feel fragile. Our approach allows teams to increase volume methodically, replace weak inboxes quickly, and avoid disruptions that stall campaigns or revenue."
               Icon={WebDevelopmentIcon}
@@ -144,6 +148,7 @@ export default function whyleadgeninsider() {
               Link="contact"
             />
             <CardBox
+              HeadTitle=""
               Title="Transparent, Hands-On Support"
               Content="You’re not handed a setup and left alone. We stay involved—monitoring inbox health, addressing issues early, and keeping your infrastructure aligned with your sending goals."
               Icon={WebDevelopmentIcon}
