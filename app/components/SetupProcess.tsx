@@ -154,10 +154,10 @@ export default function SetupProcess() {
             <div className="grid gap-4 justify-center items-center">
               <div className="flex justify-center">
                 <div
-                  className={`p-3 rounded-lg w-fit bg-slate-600/10
+                  className={`p-3 rounded-lg w-fit bg-green-600/10
               ${
                 activeFeature === feature.id ?
-                  "bg-slate-600/50 text-white"
+                  "bg-green-700 text-white"
                 : "bg-none text-gray-800 "
               }
             `}
@@ -169,6 +169,24 @@ export default function SetupProcess() {
               <h3 className="2xl:text-xl md:text-lg sm:text-sm text-sm mt-2 font-medium text-center text-white">
                 {feature.title}
               </h3>
+
+              <span className="text-center flex justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.3"
+                  stroke={`${activeFeature === feature.id ? "#999" : "#555"}
+            `}
+                  className="size-5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </span>
             </div>
           </button>
         ))}
