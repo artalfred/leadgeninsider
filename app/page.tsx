@@ -19,6 +19,8 @@ import useClickedOutside from "./components/hooks/useClickOutside";
 import HowToGetStarted from "./components/HowToGetStarted";
 import ServicesOverview from "./components/ServicesOverview";
 import OurSetupprocess from "./components/OurSetupProcess";
+import PartnershipDeals from "./components/PartnershipDeals";
+import SectionTitle from "./components/SectionTitle";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -151,94 +153,23 @@ export default function Home() {
       {/* Services Overview */}
       <ServicesOverview />
 
-      {/* PARTNERSIP / COMMISION-BASED DEALS */}
-      <div className="max-w-7xl mx-auto 2xl:py-10 2xl:px-0 md:px-4 sm:px-4 px-4">
-        <div className="grid">
-          <div className="grid justify-between items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 gap-5">
-            <div>
-              <div className="flex gap-6 items-center">
-                <h1 className="text-start leading-normal font-medium 2xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl text-2xl text-white">
-                  Partnership / Commission-Based Deals
-                </h1>
-              </div>
-
-              <h1 className="mt-2 text-xl text-white">
-                Flexible, performance-aligned partnerships.
-              </h1>
-
-              <div className="grid gap-4 mt-6">
-                <div className="flex gap-6 items-center">
-                  <h1 className="text-green-600 leading-normal font-black 2xl:text-3xl lg:text-3xl md:text-xl sm:text-xl text-xl">
-                    Trust Strip
-                  </h1>
-
-                  <div className="grid 2xl:gap-3 md:gap-2 gap-2 2xl:mt-0 md:mt-0 sm:mt-0 mt-0">
-                    <div className="h-0.5 bg-green-600 2xl:w-20 md:w-15 w-15"></div>
-                    <div className="h-0.5 bg-green-600 2xl:w-10 md:w-8 w-6"></div>
-                  </div>
-                </div>
-
-                <ul>
-                  <li className="text-xl flex items-center gap-3">
-                    <Image src={Checked} alt="Checked" height={20} />
-                    <span className="mt-2 text-white">
-                      5+ years in email marketing
-                    </span>
-                  </li>
-                  <li className="text-xl flex items-center gap-3">
-                    <Image src={Checked} alt="Checked" height={20} />
-                    <span className="mt-2 text-white">
-                      Thousands of inboxes deployed
-                    </span>
-                  </li>
-                  <li className="text-xl flex items-center gap-3">
-                    <Image src={Checked} alt="Checked" height={20} />
-                    <span className="mt-2 text-white">
-                      Smartlead & Bison compatible
-                    </span>
-                  </li>
-                  <li className="text-xl flex items-center gap-3">
-                    <Image src={Checked} alt="Checked" height={20} />
-                    <span className="mt-2 text-white">
-                      Deliverability-first setup
-                    </span>
-                  </li>
-                </ul>
-
-                <Button
-                  title="Pricing"
-                  style="primary-btn 2xl:mt-4"
-                  link="/pricing"
-                  align=""
-                ></Button>
-              </div>
-            </div>
-
-            <div className="flex 2xl:justify-end lg:justify-start md:justify-start sm:justify-center justify-center  2xl:mt-0 lg:mt-0 sm:mt-6 mt-6">
-              <div className="2xl:p-6 lg:p-6 p-3 bg-amber-50/10 rounded-2xl w-fit">
-                <div className="rounded-2xl overflow-hidden">
-                  <div>
-                    <Image src={Deals} alt="Hello" height={350} width={700} />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Our Setup Process (Step-by-Step) */}
       <OurSetupprocess />
 
+      {/* PARTNERSIP / COMMISION-BASED DEALS */}
+      {/* <PartnershipDeals /> */}
+
       {/*Why This Works */}
       <div className="max-w-7xl mx-auto 2xl:px-0 md:px-6 sm:px-6 px-4">
-        <div className="grid">
+        <div className="grid 2xl:pt-20 md:pt-20 sm:pt-20 pt-20 2xl:pb-20 md:pb-20 sm:pb-0 pb-0">
           <div className="grid justify-between items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 gap-5">
             <div>
               <div className="flex gap-6 items-center">
-                <h1 className="text-start leading-normal font-medium 2xl:text-3xl lg:text-3xl md:text-3xl sm:text-2xl text-2xl text-white">
-                  Why This Works
-                </h1>
+                <SectionTitle
+                  title="Why This Works"
+                  style=""
+                  titleStyle="text-white"
+                />
               </div>
               <div className="grid 2xl:mt-6 md:mt-4 sm:mt-2 mt-2">
                 <ul className="grid gap-2 mt-2">

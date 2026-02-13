@@ -2,10 +2,18 @@
 
 html {
   scroll-behavior: smooth !important;
+  background-image: url("@/public/background/Background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
   font-optical-sizing: auto;
+}
+
+.secondary--color {
+  color: #120044;
 }
 
 /* NAVIGATION */
@@ -20,7 +28,7 @@ body {
 }
 
 /* Make video cover the entire viewport  */
-.bg-video {
+.home--background {
   position: fixed;
   inset: 0;
   width: 100vw;
@@ -126,6 +134,21 @@ p {
   color: #171717;
 }
 
+.tertiary-btn {
+  background-color: transparent;
+  color: #004aad;
+  border: 2px solid #004aad;
+  cursor: pointer;
+}
+
+.tertiary-btn:hover {
+  background-color: #004aad;
+  border: 2px solid #004aad;
+  background-color: #004aad;
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+}
+
 /* /////////////////////////////////////////////////// */
 /* LOGO SECTION */
 /* /////////////////////////////////////////////////// */
@@ -195,4 +218,32 @@ p {
   opacity: 40%;
 
   height: 40rem;
+}
+
+/* .partnershipDeals {
+  background-image: url("@/public/background/PartnershipDeals.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.InboxInfrastructureSetup {
+  position: relative;
+  overflow: hidden;
+}
+
+.InboxInfrastructureSetup .bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.InboxInfrastructureSetup .content {
+  position: relative;
+  z-index: 1;
 }

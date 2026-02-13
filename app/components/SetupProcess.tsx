@@ -11,51 +11,37 @@ import SingleDomainStrategy from "@/public/SetupProcess/SingleDomainStrategy.jpe
 import AutomatedSubdomainCreation from "@/public/SetupProcess/AutomatedSubdomainCreation.jpeg";
 import SafeInboxScalingStrategy from "@/public/SetupProcess/SafeInboxScalingStrategy.jpeg";
 import ScalableReplaceableSafe from "@/public/SetupProcess/ScalableReplaceableSafe.jpeg";
+import Button from "./Button";
 
 const FEATURES = [
   {
     id: "feature1",
     icon: DomainStrategy,
     title: "Single Domain Strategy",
-    content_one:
-      "You only need one main domain (example: Leadgeninsider.co). We automate everything else.",
-    content_two:
-      "Instead of buying 500 separate domains, we generate hundreds of subdomains such as:",
-    list_one: "best.leadgeninsider.co",
-    list_two: "try.leadgeninsider.co",
-    list_three: "pro.leadgeninsider.co",
-    list_four: "see.leadgeninsider.co",
-    content_three:
-      "Each subdomain functions as an independent sending entity, protecting deliverability.",
+    subTitle: "One main domain — everything else automated",
+    description:
+      "You only need one core domain (e.g., LeadGenInsider.co). We automatically generate and manage hundreds of subdomains to scale sending safely—so you don’t have to buy or maintain hundreds of separate domains.",
+
     image: SingleDomainStrategy || "",
   },
   {
     id: "feature2",
     icon: SubDomainAutomation,
     title: "Automated Subdomain Creation",
-    content_one:
-      "Automated Subdomain Scaling We instantly deploy 500+ standardized subdomains via precision scripts. By eliminating manual DNS configuration, we ensure an error-free, high-deliverability foundation built for infinite scale.",
-    content_two: "",
-    list_one: "Fast deployment",
-    list_two: "No missed records",
-    list_three: "Fully standardized setup",
-    list_four: "",
-    content_three: "",
+    subTitle: "Instant, standardized subdomain deployment",
+    description:
+      "We automatically deploy hundreds of fully configured subdomains using precision automation — eliminating manual DNS work, preventing setup errors, and creating a scalable, deliverability-first infrastructure built for growth.",
+
     image: AutomatedSubdomainCreation || "",
   },
   {
     id: "feature3",
     icon: Inboxes,
     title: "Safe Inbox Scaling Strategy",
-    content_one:
-      "We assign 3 inboxes per subdomain  to balance volume and inbox safety.",
-    content_two: "",
-    list_one: "name.last@Leadgeninsider.co",
-    list_two: "name@Leadgeninsider.co",
-    list_three: "lastname@Leadgeninsider.co",
-    list_four: "",
-    content_three:
-      "This keeps inbox behavior natural and reduces spam signals.",
+    subTitle: "Balanced inbox distribution for deliverability protection",
+    description:
+      "Each subdomain is configured with a small, controlled set of inboxes to maintain natural sending behavior. This structured scaling approach reduces spam signals, protects sender reputation, and keeps outreach stable as volume grows.",
+
     image: SafeInboxScalingStrategy || "",
   },
 
@@ -63,14 +49,10 @@ const FEATURES = [
     id: "feature4",
     icon: Safe,
     title: "Scalable, Replaceable, Safe",
-    content_one:
-      "If inbox health drops, we spin up new subdomains and inboxes  using the same automation—without rebuilding your entire system.",
-    content_two: "",
-    list_one: "Modular Recovery",
-    list_two: "Zero-Downtime Scaling",
-    list_three: "Reputation Firewalls",
-    list_four: "Predictable ROI",
-    content_three: "Result: lower costs, faster recovery, predictable scale.",
+    subTitle: "Infrastructure built for recovery and continuous scale",
+    description:
+      "When inbox health declines, we automatically deploy fresh subdomains and inboxes without rebuilding your system. This modular design enables fast recovery, uninterrupted scaling, and long-term deliverability stability — keeping your outreach predictable and resilient.",
+
     image: ScalableReplaceableSafe || "",
   },
 ];
@@ -80,45 +62,30 @@ const FEATURESMOBILE = [
     id: "feature1",
     icon: DomainStrategy,
     title: "1. Single Domain Strategy",
-    content_one:
-      "You only need one main domain (example: Leadgeninsider.co). We automate everything else.",
-    content_two:
-      "Instead of buying 500 separate domains, we generate hundreds of subdomains such as:",
-    list_one: "best.leadgeninsider.co",
-    list_two: "try.leadgeninsider.co",
-    list_three: "pro.leadgeninsider.co",
-    list_four: "see.leadgeninsider.co",
-    content_three:
-      "Each subdomain functions as an independent sending entity, protecting deliverability.",
+    subTitle: "One main domain — everything else automated",
+    description:
+      "You only need one core domain (e.g., LeadGenInsider.co). We automatically generate and manage hundreds of subdomains to scale sending safely—so you don’t have to buy or maintain hundreds of separate domains.",
+
     image: SingleDomainStrategy || "",
   },
   {
     id: "feature2",
     icon: SubDomainAutomation,
     title: "2. Automated Subdomain Creation",
-    content_one:
-      "Automated Subdomain Scaling We instantly deploy 500+ standardized subdomains via precision scripts. By eliminating manual DNS configuration, we ensure an error-free, high-deliverability foundation built for infinite scale.",
-    content_two: "",
-    list_one: "Fast deployment",
-    list_two: "No missed records",
-    list_three: "Fully standardized setup",
-    list_four: "",
-    content_three: "",
+    subTitle: "Instant, standardized subdomain deployment",
+    description:
+      "We automatically deploy hundreds of fully configured subdomains using precision automation — eliminating manual DNS work, preventing setup errors, and creating a scalable, deliverability-first infrastructure built for growth.",
+
     image: AutomatedSubdomainCreation || "",
   },
   {
     id: "feature3",
     icon: Inboxes,
     title: "3. Safe Inbox Scaling Strategy",
-    content_one:
-      "We assign 3 inboxes per subdomain  to balance volume and inbox safety.",
-    content_two: "",
-    list_one: "name.last@Leadgeninsider.co",
-    list_two: "name@Leadgeninsider.co",
-    list_three: "lastname@Leadgeninsider.co",
-    list_four: "",
-    content_three:
-      "This keeps inbox behavior natural and reduces spam signals.",
+    subTitle: "Balanced inbox distribution for deliverability protection",
+    description:
+      "Each subdomain is configured with a small, controlled set of inboxes to maintain natural sending behavior. This structured scaling approach reduces spam signals, protects sender reputation, and keeps outreach stable as volume grows.",
+
     image: SafeInboxScalingStrategy || "",
   },
 
@@ -126,14 +93,10 @@ const FEATURESMOBILE = [
     id: "feature4",
     icon: Safe,
     title: "4. Scalable, Replaceable, Safe",
-    content_one:
-      "If inbox health drops, we spin up new subdomains and inboxes  using the same automation—without rebuilding your entire system.",
-    content_two: "",
-    list_one: "Modular Recovery",
-    list_two: "Zero-Downtime Scaling",
-    list_three: "Reputation Firewalls",
-    list_four: "Predictable ROI",
-    content_three: "Result: lower costs, faster recovery, predictable scale.",
+    subTitle: "Infrastructure built for recovery and continuous scale",
+    description:
+      "When inbox health declines, we automatically deploy fresh subdomains and inboxes without rebuilding your system. This modular design enables fast recovery, uninterrupted scaling, and long-term deliverability stability — keeping your outreach predictable and resilient.",
+
     image: ScalableReplaceableSafe || "",
   },
 ];
@@ -144,49 +107,32 @@ export default function SetupProcess() {
   return (
     <section className="2xl:block lg:block md:hidden sm:hidden hidden">
       {/* BUTTONS */}
-      <div className="flex gap-4 justify-start mb-10">
+      <div className="flex gap-4 justify-start mb-10 ">
         {FEATURES.map((feature) => (
           <button
             key={feature.id}
             onClick={() => setActiveFeature(feature.id)}
-            className="px-3 py-3 rounded-xl font-medium transition flex items-center justify-center w-full hover:bg-slate-500/10 cursor-pointer"
+            className=" relative px-3 py-3 rounded-xl font-medium transition flex items-center justify-center w-full cursor-pointer"
           >
-            <div className="grid gap-4 justify-center items-center">
+            <div className="grid gap-4 items-center justify-center">
               <div className="flex justify-center">
-                <div
-                  className={`p-3 rounded-lg w-fit bg-green-600/10
-              ${
-                activeFeature === feature.id ?
-                  "bg-green-700 text-white"
-                : "bg-none text-gray-800 "
-              }
-            `}
-                >
-                  <Image src={feature.icon} alt="Close" height={50} />
-                </div>
+                <Image
+                  src={feature.icon}
+                  alt="Close"
+                  height={55}
+                  width={55}
+                  className={`p-3 rounded-lg hover:bg-[#0b4da5] transition-all ease-in-out duration-200
+                  ${
+                    activeFeature === feature.id ?
+                      "bg-[#0b4da5] text-white"
+                    : "bg-[#0b4da5]/50 text-gray-800 "
+                  }
+                    `}
+                />
               </div>
-
-              <h3 className="2xl:text-xl md:text-lg sm:text-sm text-sm mt-2 font-medium text-center text-white">
+              <h3 className="2xl:text-xl md:text-lg sm:text-sm text-sm mt-2 font-medium text-center secondary--color">
                 {feature.title}
               </h3>
-
-              <span className="text-center flex justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.3"
-                  stroke={`${activeFeature === feature.id ? "#999" : "#555"}
-            `}
-                  className="size-5"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-              </span>
             </div>
           </button>
         ))}
@@ -199,51 +145,45 @@ export default function SetupProcess() {
             activeFeature === feature.id && (
               <div key={feature.id} className="animate-fade">
                 <div className="flex items-center gap-10">
-                  <div className="2xl:p-6 lg:p-6 p-3 bg-amber-50/10 rounded-2xl w-[55%]">
-                    <div className="rounded-2xl overflow-hidden">
-                      <div>
-                        <Image
-                          src={feature.image!}
-                          alt={feature.id}
-                          height={350}
-                          width={700}
-                        />
-                      </div>
+                  <div
+                    className="2xl:p-4 lg:p-4 p-2  border border-[rgba(89,81,255,.188)] rounded-2xl w-[65%]"
+                    style={{
+                      boxShadow: "0 53.316px 53.316px 0 rgba(0,0,0,.08)",
+                      backdropFilter: "blur(12px)",
+                    }}
+                  >
+                    <div className="rounded-2xl overflow-hidden w-fit">
+                      <Image
+                        src={feature.image!}
+                        alt={feature.id}
+                        className="w-fit h-fit"
+                      />
                     </div>
                   </div>
 
-                  <div className="w-[30%]">
-                    <h3 className="text-2xl font-medium w-fit text-white">
-                      {feature.title}
-                    </h3>
+                  <div className="w-[35%]">
+                    <div className="grid gap-2">
+                      <h3 className="text-2xl font-medium w-fit secondary--color">
+                        {feature.title}
+                      </h3>
 
-                    <div className="grid gap-2 mt-4">
-                      <h6 className="text-lg text-gray-400">
-                        {feature.content_one}
-                      </h6>
-                      <h6 className="text-lg text-gray-400">
-                        {feature.content_two}
-                      </h6>
+                      <h3 className="text-lg font-medium w-fit secondary--color leading-none">
+                        {feature.subTitle}
+                      </h3>
                     </div>
 
-                    <ul className="mt-2">
-                      <li className="border-b border-gray-600/40 py-2 2xl:text-lg text:md break-all w-full text-green-500">
-                        {feature.list_one}
-                      </li>
-                      <li className="border-b border-gray-600/40 py-2 2xl:text-lg text:md break-all w-full text-green-500">
-                        {feature.list_two}
-                      </li>
-                      <li className="border-b border-gray-600/40 py-2 2xl:text-lg text:md break-all w-full text-green-500">
-                        {feature.list_three}
-                      </li>
-                      <li className="border-b border-gray-600/40 py-2 2xl:text-lg text:md break-all w-full text-green-500">
-                        {feature.list_four}
-                      </li>
-                    </ul>
+                    <div className="grid gap-6 mt-4">
+                      <h6 className="text-md secondary--color">
+                        {feature.description}
+                      </h6>
 
-                    <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md italic font-light mt-2 text-white">
-                      {feature.content_three}
-                    </p>
+                      <Button
+                        title="Scale My Outreach"
+                        style="tertiary-btn"
+                        link="/contact"
+                        align="flex justify-start"
+                      ></Button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -263,52 +203,45 @@ export function SetupProcessMobile() {
             feature.id && (
               <div key={feature.id} className="animate-fade">
                 <div className="grid items-center gap-10">
-                  <div className="grid gap-5">
-                    <h3 className="2xl:text-xl md:text-xl sm:text-xl text-xl font-medium w-fit text-white">
-                      {feature.title}
-                    </h3>
-                    <div className="2xl:p-6 lg:p-6 p-3 bg-amber-50/10 rounded-2xl w-fit">
-                      <div className="rounded-2xl overflow-hidden">
-                        <div>
+                  <div className="grid gap-2">
+                    <div className="grid gap-2">
+                      <h3 className="text-xl font-medium w-fit secondary--color">
+                        {feature.title}
+                      </h3>
+
+                      <h3 className="text-md font-medium w-fit secondary--color leading-none">
+                        {feature.subTitle}
+                      </h3>
+                    </div>
+
+                    <div className="grid gap-6 mt-4">
+                      <h6 className="text-md secondary--color">
+                        {feature.description}
+                      </h6>
+
+                      <div
+                        className="2xl:p-4 lg:p-4 p-2  border border-[rgba(89,81,255,.188)] rounded-2xl"
+                        style={{
+                          boxShadow: "0 53.316px 53.316px 0 rgba(0,0,0,.08)",
+                          backdropFilter: "blur(12px)",
+                        }}
+                      >
+                        <div className="rounded-2xl overflow-hidden w-fit">
                           <Image
                             src={feature.image!}
                             alt={feature.id}
-                            height={350}
-                            width={700}
+                            className="w-fit h-fit"
                           />
                         </div>
                       </div>
+
+                      <Button
+                        title="Scale My Outreach"
+                        style="tertiary-btn"
+                        link="/contact"
+                        align="flex justify-start"
+                      ></Button>
                     </div>
-                  </div>
-
-                  <div>
-                    <div className="grid gap-2">
-                      <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md text-gray-400">
-                        {feature.content_one}
-                      </p>
-                      <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md text-gray-400">
-                        {feature.content_two}
-                      </p>
-                    </div>
-
-                    <ul className="mt-2">
-                      <li className="border-b border-gray-600/40 py-2 2xl:text-lg text:md break-all w-full text-green-500">
-                        {feature.list_one}
-                      </li>
-                      <li className="border-b border-gray-600/40 py-2 2xl:text-lg text:md break-all w-full text-green-500">
-                        {feature.list_two}
-                      </li>
-                      <li className="border-b border-gray-600/40 py-2 2xl:text-lg text:md break-all w-full text-green-500">
-                        {feature.list_three}
-                      </li>
-                      <li className="border-b border-gray-600/40 py-2 2xl:text-lg text:md break-all w-full text-green-500">
-                        {feature.list_four}
-                      </li>
-                    </ul>
-
-                    <p className="2xl:text-xl lg:text-xl md:text-lg sm:text-md text-md italic font-light mt-2 text-white">
-                      {feature.content_three}
-                    </p>
                   </div>
                 </div>
               </div>

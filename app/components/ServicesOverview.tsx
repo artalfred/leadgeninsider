@@ -1,8 +1,9 @@
 import Button from "./Button";
+import SectionTitle from "./SectionTitle";
 
 export default function ServicesOverview() {
   return (
-    <div className="max-w-7xl mx-auto 2xl:pt-20 md:py-0 sn:py-0 py-0 relative isolate overflow-hidden lg:overflow-visible lg:px-0 sm:px-4 px-4">
+    <div className="max-w-7xl mx-auto relative isolate overflow-hidden lg:overflow-visible lg:px-0 sm:px-4 px-4">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <svg
           aria-hidden="true"
@@ -35,17 +36,12 @@ export default function ServicesOverview() {
         </svg>
       </div>
 
-      <div className="py-20 grid items-center 2xl:gap-20 lg:gap-15 md:gap-15 sm:gap-10 gap-10">
-        <div className="flex gap-6 items-center">
-          <h1 className="text-start leading-normal font-medium 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl text-white">
-            Services Overview
-          </h1>
-
-          <div className="grid 2xl:gap-3 md:gap-2 gap-2 2xl:mt-2 md:mt-2 sm:mt-2 mt-2">
-            <div className="h-0.5 bg-green-600 2xl:w-25 md:w-20 w-15"></div>
-            <div className="h-0.5 bg-green-600 2xl:w-10 md:w-8 w-6"></div>
-          </div>
-        </div>
+      <div className="2xl:py-40 md:py-20 sn:py-20 py-20 grid items-center 2xl:gap-20 lg:gap-15 md:gap-15 sm:gap-10 gap-10">
+        <SectionTitle
+          title="Services Overview"
+          style=""
+          titleStyle="text-white"
+        />
 
         <div className="grid justify-between items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 gap-10">
           <div className="bg-slate-800/40 rounded-2xl p-6 shadow-lg">
@@ -63,15 +59,17 @@ export default function ServicesOverview() {
               </p>
             </div>
 
-            <h1 className="mt-10 text-5xl font-bold text-white">
-              $2,000
-              <span className="text-lg text-gray-400 font-medium">/ month</span>
-            </h1>
-
             <div className="grid gap-4 mt-6 ">
+              <h3 className="text-gray-200 text-start leading-normal font-medium 2xl:text-xl lg:text-xl md:text-xl sm:text-lg text-lg">
+                What’s Included:
+              </h3>
               <ul className="grid gap-1">
                 <li className="text-md gap-3 text-gray-300">
-                  <span className="mr-4">✔</span>Up to 3000 inboxes included
+                  <span className="mr-4">✔</span>Up to{" "}
+                  <span className="font-medium text-green-500">
+                    3000 inboxes
+                  </span>{" "}
+                  included
                 </li>
                 <li className="text-md gap-3 text-gray-300">
                   <span className="mr-4">✔</span>Deliverability-focused
@@ -122,20 +120,23 @@ export default function ServicesOverview() {
               </h2>
               <p className="text-gray-400">
                 Done-for-you outbound campaigns delivering{" "}
-                <span className="text-green-500">20–30 qualified</span> leads
-                per day. <span className="text-green-500">$1,500 </span>
+                <span className="text-green-500 font-medium">
+                  20–30 qualified
+                </span>{" "}
+                leads per day.{" "}
+                <span className="text-green-500 font-medium">$1,500 </span>
                 onboarding, then{" "}
-                <span className="text-green-500">$2,500/month </span> for
-                ongoing management.
+                <span className="text-green-500 font-medium">
+                  $2,500/month{" "}
+                </span>{" "}
+                for ongoing management.
               </p>
             </div>
 
-            <h1 className="mt-10 text-5xl font-bold text-white">
-              $2,500
-              <span className="text-lg text-gray-400 font-medium">/ month</span>
-            </h1>
-
             <div className="grid gap-4 mt-6 ">
+              <h3 className="text-gray-200 text-start leading-normal font-medium 2xl:text-xl lg:text-xl md:text-xl sm:text-lg text-lg">
+                Campaign Capabilities:
+              </h3>
               <ul className="grid gap-1">
                 <li className="text-md gap-3 text-gray-300">
                   <span className="mr-4">✔</span>Niche-focused outreach strategy
