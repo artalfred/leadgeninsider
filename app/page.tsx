@@ -1,25 +1,16 @@
 "use client";
 
 import Button from "./components/Button";
-import Container from "./components/Container";
 import Image from "next/image";
 import Content from "./components/Content";
 import Checked from "../public/Icon/Checked.svg";
-import Domain from "@/public/Icon/Domain.svg";
-import InboxManagementIcon from "@/public/Icon/InboxManagementIcon.svg";
-import InboxManagement from "@/public/Icon/InboxManagement.svg";
-import DomainSetup from "@/public/Icon/DomainSetup.svg";
 import WhyThisWorks from "@/public/SetupProcess/WhyThisWorks.png";
-import Deals from "@/public/Home/Deals.jpeg";
-import CardBox from "./components/CardBox";
-import SetupProcess, { SetupProcessMobile } from "./components/SetupProcess";
 import Infrastructure from "@/public/INFRASTRUCTURESETUP.svg";
 import { useRef, useState } from "react";
 import useClickedOutside from "./components/hooks/useClickOutside";
 import HowToGetStarted from "./components/HowToGetStarted";
 import ServicesOverview from "./components/ServicesOverview";
 import OurSetupprocess from "./components/OurSetupProcess";
-import PartnershipDeals from "./components/PartnershipDeals";
 import SectionTitle from "./components/SectionTitle";
 
 export default function Home() {
