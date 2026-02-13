@@ -91,9 +91,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid place-items-center gap-6">
+        <div className="grid place-items-center gap-6 z-0">
           <div className="p-3 lg:p-6 bg-amber-50/10 rounded-2xl w-full max-w-5xl">
-            <div className="aspect-video w-full overflow-hidden rounded-2xl">
+            <div className="aspect-video w-full overflow-hidden rounded-2xl z-0">
               <iframe
                 src="https://www.youtube.com/embed/u_UIlRaA3x0?rel=0&modestbranding=0"
                 className="w-full h-full"

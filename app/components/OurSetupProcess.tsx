@@ -2,7 +2,7 @@ import SetupProcess, { SetupProcessMobile } from "./SetupProcess";
 
 export default function OurSetupprocess() {
   return (
-    <div className="InboxInfrastructureSetup">
+    <div className="InboxInfrastructureSetup z-0">
       <div className="max-w-7xl mx-auto 2xl:px-0 md:px-6 sm:px-6 px-4 grid 2xl:pt-30 md:pt-20 sm:pt-20 pt-20 2xl:pb-40 md:pb-20 sm:pb-20 pb-20">
         <video className="bg-video" autoPlay muted loop playsInline>
           <source
