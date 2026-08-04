@@ -3,8 +3,6 @@
 import Button from "./components/Button";
 import Image from "next/image";
 import Content from "./components/Content";
-import Checked from "../public/Icon/Checked.svg";
-import WhyThisWorks from "@/public/SetupProcess/WhyThisWorks.png";
 import Infrastructure from "@/public/INFRASTRUCTURESETUP.svg";
 import { useRef, useState } from "react";
 import useClickedOutside from "./components/hooks/useClickOutside";
@@ -12,6 +10,13 @@ import HowToGetStarted from "./components/HowToGetStarted";
 import ServicesOverview from "./components/ServicesOverview";
 import OurSetupprocess from "./components/OurSetupProcess";
 import SectionTitle from "./components/SectionTitle";
+
+import BI_one from "@/public/Showcase/BI_one.svg";
+import BI_two from "@/public/Showcase/BI_two.svg";
+import BI_three from "@/public/Showcase/BI_three.svg";
+import BI_four from "@/public/Showcase/BI_four.svg";
+import { Accordion } from "@heroui/react";
+import FAQAccordion from "./faqs/page";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,15 +69,21 @@ export default function Home() {
           </svg>
         </div>
         <div className="grid gap-6">
-          <h1 className="text-center 2xl:text-[80px]/24 lg:text-6xl md:text-4xl sm:text-3xl text-3xl text-white">
-            High-volume email infrastructure, Built for{" "}
-            <span className="text-gray-400">long-term deliverability.</span>
-          </h1>
+          <div className="grid 2xl:gap-4 md:gap-2 gap-2">
+            <h1 className="text-center 2xl:text-7xl lg:text-6xl md:text-4xl sm:text-3xl text-3xl text-white">
+              High-volume email infrastructure
+            </h1>
 
-          <Content
-            style="text-center"
-            content="Automated email infrastructure that scales without risking deliverability."
-          />
+            <h6 className="text-gray-400 font-normal 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl text-center">
+              Built for long-term deliverability.
+            </h6>
+
+            <Content
+              style="text-center"
+              content="Automated email infrastructure that scales without risking deliverability."
+            />
+          </div>
+
           <div className="2xl:flex md:grid sm:grid grid gap-4 justify-center">
             <Button
               title="Get Started"
@@ -92,7 +103,7 @@ export default function Home() {
         </div>
 
         <div className="grid place-items-center gap-6 z-0">
-          <div className="p-3 lg:p-6 bg-amber-50/10 rounded-2xl w-full max-w-5xl">
+          <div className="p-3 lg:p-6 bg-amber-50/10 rounded-2xl w-full max-w-4xl">
             <div className="aspect-video w-full overflow-hidden rounded-2xl z-0">
               <iframe
                 src="https://www.youtube.com/embed/u_UIlRaA3x0?rel=0&modestbranding=0"
@@ -153,47 +164,20 @@ export default function Home() {
       {/*Why This Works */}
       <div className="max-w-7xl mx-auto 2xl:px-0 md:px-6 sm:px-6 px-4">
         <div className="grid 2xl:pt-20 md:pt-20 sm:pt-20 pt-20 2xl:pb-20 md:pb-20 sm:pb-0 pb-0">
-          <div className="grid justify-between items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 gap-5">
+          <div className="flex justify-between items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 gap-5">
             <div>
               <div className="flex gap-6 items-center">
                 <SectionTitle
-                  title="Why This Works"
+                  title="Behind the Infrastructure"
                   style=""
                   titleStyle="text-white"
                 />
               </div>
-              <div className="grid 2xl:mt-6 md:mt-4 sm:mt-2 mt-2">
-                <ul className="grid gap-2 mt-2">
-                  <li className="2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
-                    <Image src={Checked} alt="Checked" height={18} />
-                    <span className="text-gray-400">
-                      One domain instead of hundreds
-                    </span>
-                  </li>
-                  <li className="2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
-                    <Image src={Checked} alt="Checked" height={18} />
-                    <span className="text-gray-400">
-                      Automation-based subdomain & DNS setup
-                    </span>
-                  </li>
-                  <li className="2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
-                    <Image src={Checked} alt="Checked" height={18} />
-                    <span className="text-gray-400">
-                      Deliverability-first architecture
-                    </span>
-                  </li>
-                  <li className="2xl:text-xl md:text-lg sm:text-lg text-lg flex items-center gap-3">
-                    <Image src={Checked} alt="Checked" height={18} />
-                    <span className="text-gray-400">
-                      Built for agencies and high-volume senders
-                    </span>
-                  </li>
-                  <li className="2xl:text-xl md:text-lg sm:text-lg text-lg mt-7 text-white">
-                    This is how our clients safely operate{" "}
-                    <span className="text-green-600">500–1,500+ inboxes </span>
-                    at scale.
-                  </li>
-                </ul>
+
+              <div className="grid">
+                <h4 className="text-white text-xl">
+                  Real campaigns. Real infrastructure. Real deliverability.
+                </h4>
 
                 <Button
                   title="Send us a message – we reply in minutes."
@@ -202,14 +186,28 @@ export default function Home() {
                   align="flex justify-start"
                 ></Button>
               </div>
-            </div>
 
-            <div className="flex 2xl:justify-end lg:justify-start md:justify-start sm:justify-center justify-center">
-              <Image src={WhyThisWorks} alt="Image" height={380} />
+              <div className="grid 2xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-10">
+                <div>
+                  <Image src={BI_one} alt="BI-one" />
+                </div>
+                <div>
+                  <Image src={BI_two} alt="BI-one" />
+                </div>
+                <div>
+                  <Image src={BI_three} alt="BI-one" />
+                </div>
+                <div>
+                  <Image src={BI_four} alt="BI-one" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* FAQS */}
+      <FAQAccordion />
 
       {/* HOW TO GET STARTED */}
       <HowToGetStarted />

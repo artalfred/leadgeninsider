@@ -6,7 +6,7 @@ import Logo from "@/public/Logo/Logo.svg";
 import LogoColored from "@/public/Logo/colored-logo.svg";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
+import ResourcesNav from "./components/Navbar";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +59,7 @@ export default function Header() {
         className={` w-full transition-transform duration-300 fixed top-0 z-10 ${hidden ? "-translate-y-20" : " translate-y-0"}`}
       >
         <div
-          className={`${lastScrollY ? "bg-[#1f1f1f]" : "bg-[#033271]/40"} 2xl:px-40 lg:px-10 md:px-8 px-5 2xl:py-0 md:py-2 sm:py-3 py-3  backdrop-blur-2xl flex justify-center shadow-sm fixed top-0 w-full z-10`}
+          className={`${lastScrollY ? "bg-[#033271]/90 backdrop-blur-2xl shadow-sm" : "mt-1"} 2xl:px-40 lg:px-10 md:px-8 px-5 2xl:py-0 md:py-2 sm:py-3 py-3 flex justify-center w-full z-10`}
         >
           <div className="flex justify-between items-center w-full">
             <Link href="/">
@@ -72,40 +72,45 @@ export default function Header() {
               </div>
             </Link>
 
-            {/* NAV MENU */}
-            <ul className="items-center gap-12 2xl:flex xl:flex lg:hidden md:hidden sm:hidden hidden">
-              <Link
-                href="/whyleadgeninsider"
-                scroll
-                className="text-[15px] font-nomal text-white"
-              >
-                <li className="cursor-pointer tracking-wider text-white">
-                  Why Us
-                </li>
-              </Link>
-              <Navbar />
-              <Link href="/pricing" className="text-[15px] font-nomal">
-                <li className="cursor-pointer tracking-wider text-white">
-                  Pricing
-                </li>
-              </Link>
-              <Link href="/ourTeam" className="text-[15px] font-normal">
-                <li className="cursor-pointer tracking-wider text-white">
-                  Our Team
-                </li>
-              </Link>
-              <Link href="/aboutUs" className="text-[15px] font-normal">
-                <li className="cursor-pointer tracking-wider text-white">
-                  About Us
-                </li>
-              </Link>
-            </ul>
+            <div className="2xl:flex xl:flex lg:hidden md:hidden sm:hidden hidden items-center gap-10">
+              {/* NAV MENU */}
+              <ul className="items-center gap-10 2xl:flex xl:flex lg:hidden md:hidden sm:hidden hidden">
+                <Link
+                  href="/whyleadgeninsider"
+                  scroll
+                  className="text-[15px] font-normal"
+                >
+                  <li className="cursor-pointer tracking-wider text-white">
+                    Why Us
+                  </li>
+                </Link>
 
-            <div className="2xl:flex xl:flex lg:hidden md:hidden sm:hidden hidden">
+                <Link href="/pricing" className="text-[15px] font-nomal">
+                  <li className="cursor-pointer tracking-wider text-white">
+                    Pricing
+                  </li>
+                </Link>
+
+                <Link href="/ourTeam" className="text-[15px] font-normal">
+                  <li className="cursor-pointer tracking-wider text-white">
+                    Our Team
+                  </li>
+                </Link>
+
+                {/* RESOURCES MENU */}
+                <ResourcesNav />
+
+                <Link href="/aboutUs" className="text-[15px] font-normal">
+                  <li className="cursor-pointer tracking-wider text-white">
+                    About Us
+                  </li>
+                </Link>
+              </ul>
+
               {/* RIGHT BUTTON */}
               <Button
                 title="Let’s Talk"
-                style="primary-btn"
+                style="secondary-btn"
                 link="/contact"
                 align=""
               />

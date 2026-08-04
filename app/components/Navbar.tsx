@@ -3,11 +3,10 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import blog from "@/public/Icon/blog.png";
 import faqs from "@/public/Icon/faqs.png";
-import about from "@/public/Icon/about.png";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Navbar() {
+export default function ResourcesNav() {
   return (
     <nav className="relative">
       <div className="mx-auto max-w-7xl">
@@ -27,7 +26,7 @@ export default function Navbar() {
             </button>
 
             {/* Resources Menu */}
-            <div className="invisible absolute left-0 top-full z-50 w-130 rounded-b-md bg-white p-6 shadow-xl opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 translate-y-2">
+            <div className="invisible absolute left-1/2 top-full z-50 w-[520px] -translate-x-1/2 translate-y-2 rounded-b-md bg-white p-6 shadow-xl opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
               <div className="grid grid-cols-2 gap-6">
                 <MenuItem
                   title="FAQs"
