@@ -14,12 +14,12 @@ export default function OurSetupprocess() {
         <div className="z-5 grid 2xl:gap-20 lg:gap-15 md:gap-15 sm:gap-15 gap-10">
           <div className="grid 2xl:gap-4 md:gap-4 sm:gap-2 gap-2">
             <h1
-              className={`text-center secondary--color leading-normal font-medium 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl`}
+              className={`2xl:text-center md:text-start sm:text-start text-start secondary--color leading-normal font-bold 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl`}
             >
               Inbox Infrastructure Setup
             </h1>
 
-            <h2 className="text-center 2xl:text-xl md:text-xl sm:text-lg text-lg secondary--color font-medium">
+            <h2 className="2xl:text-center md:text-start sm:text-start text-start 2xl:text-xl md:text-xl sm:text-lg text-lg secondary--color font-medium">
               Complete Outreach Inbox Setup & Platform Integration
             </h2>
           </div>

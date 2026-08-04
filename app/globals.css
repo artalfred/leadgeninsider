@@ -247,3 +247,11 @@ p {
   position: relative;
   z-index: 1;
 }
+
+/* HowToGetStarted */
+.HowToGetStarted {
+  background-image: url("/try-it-now.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

@@ -155,13 +155,10 @@ export default function Home() {
       {/* Services Overview */}
       <ServicesOverview />
 
-      {/* Our Setup Process (Step-by-Step) */}
+      {/* Our Setup Process (Step-by-Step) / Inbox Infrastructure Setup */}
       <OurSetupprocess />
 
-      {/* PARTNERSIP / COMMISION-BASED DEALS */}
-      {/* <PartnershipDeals /> */}
-
-      {/*Why This Works */}
+      {/* Behind the Infrastructure */}
       <div className="max-w-7xl mx-auto 2xl:px-0 md:px-6 sm:px-6 px-4">
         <div className="grid 2xl:pt-20 md:pt-20 sm:pt-20 pt-20 2xl:pb-20 md:pb-20 sm:pb-0 pb-0">
           <div className="flex justify-between items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 gap-5">
@@ -175,7 +172,7 @@ export default function Home() {
               </div>
 
               <div className="grid">
-                <h4 className="text-white text-xl">
+                <h4 className="text-white 2xl:text-xl md:text-md sm:text-md text-md">
                   Real campaigns. Real infrastructure. Real deliverability.
                 </h4>
 

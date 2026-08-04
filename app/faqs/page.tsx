@@ -78,15 +78,15 @@ export default function FAQAccordion() {
   return (
     <div className="max-w-7xl mx-auto 2xl:px-0 md:px-6 sm:px-6 px-4">
       <div className="grid 2xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 grid-cols-1 justify-start 2xl:pt-20 md:pt-20 sm:pt-20 pt-20 2xl:pb-20 md:pb-20 sm:pb-0 pb-0">
-        <div className="">
+        <div className="2xl:pb-0 md:pb-4 sm:pb-4 pb-4">
           <h1
-            className={`text-white text-start leading-normal font-medium 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl`}
+            className={`text-white text-start leading-normal font-bold 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl`}
           >
             Frequently Asked{" "}
             <br className="2xl:block lg:block md:hidden hidden"></br> Questions
           </h1>
 
-          <h2 className="mt-2 text-xl 2xl:w-240 md:w-full w-full text-gray-400">
+          <h2 className="mt-2 2xl:w-240 md:w-full 2xl:text-xl md:text-xl md:text-md sm:text-md text-md w-full text-gray-400">
             Have another questions? Please contact our team!
           </h2>
         </div>
@@ -99,9 +99,9 @@ export default function FAQAccordion() {
             >
               <button
                 onClick={() => toggle(index)}
-                className="w-full flex justify-between items-center pt-2 pb-6 px-0 text-left font-medium text-white"
+                className="w-full flex justify-between items-center 2xl:pt-5 md:pt-2 sm:pt-2 pt-2 2xl:pb-5 md:pb-2 sm:pb-2 pb-2 px-0 text-left font-medium text-white"
               >
-                <span className="font-normal cursor-pointer 2xl:text-xl md:text-md sm:text-md text-md">
+                <span className="font-normal cursor-pointer 2xl:text-xl md:text-md sm:text-md text-sm">
                   {faq.question}
                 </span>
                 <span className="text-xl">
