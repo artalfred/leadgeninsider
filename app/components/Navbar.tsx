@@ -26,7 +26,7 @@ export default function ResourcesNav() {
             </button>
 
             {/* Resources Menu */}
-            <div className="invisible absolute left-1/2 top-full z-50 w-[520px] -translate-x-1/2 translate-y-2 rounded-b-md bg-white p-6 shadow-xl opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+            <div className="invisible absolute left-1/2 top-full z-50 w-130 -translate-x-1/2 translate-y-2 rounded-b-md bg-white p-6 shadow-xl opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
               <div className="grid grid-cols-2 gap-6">
                 <MenuItem
                   title="FAQs"

@@ -105,7 +105,6 @@ export default function ServicesOverview() {
                 title="Get Inboxes at Scale"
                 style="primary-btn mt-4"
                 link="/contact"
-                align=""
               ></Button>
             </div>
           </div>
@@ -175,7 +174,6 @@ export default function ServicesOverview() {
                 title="Launch My Campaigns"
                 style="secondary-btn mt-4"
                 link="/contact"
-                align=""
               ></Button>
             </div>
           </div>

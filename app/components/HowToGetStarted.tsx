@@ -35,13 +35,11 @@ export default function HowToGetStarted() {
                         title="Get Started"
                         style="primary-btn mt-4"
                         link="/contact"
-                        align="flex justify-center"
                       ></Button>
                       <Button
                         title="View Pricing"
                         style="secondary-btn mt-4"
                         link="/contact"
-                        align="flex justify-center"
                       ></Button>
                     </div>
                   </div>

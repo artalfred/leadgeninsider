@@ -1,7 +1,5 @@
 "use client";
 
-import { div } from "framer-motion/client";
-
 type Props = {
   title: string;
   titleStyle: string;
