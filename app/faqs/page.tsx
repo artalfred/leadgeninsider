@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import SectionTitle from "../components/SectionTitle";
-import Section from "../components/Section";
 
 const FAQS = [
   {
