@@ -3,7 +3,7 @@ import SetupProcess, { SetupProcessMobile } from "./SetupProcess";
 export default function OurSetupprocess() {
   return (
     <div className="InboxInfrastructureSetup z-0">
-      <div className="max-w-7xl mx-auto 2xl:px-0 md:px-6 sm:px-6 px-4 grid 2xl:pt-30 md:pt-20 sm:pt-20 pt-20 2xl:pb-40 md:pb-20 sm:pb-20 pb-20">
+      <div className="max-w-7xl mx-auto 2xl:px-0 md:px-6 sm:px-6 px-4 grid 2xl:pt-15 md:pt-20 sm:pt-20 pt-20 2xl:pb-25 md:pb-20 sm:pb-20 pb-20">
         <video className="bg-video" autoPlay muted loop playsInline>
           <source
             src="/background/InboxInfrastructureSetup.mp4"
@@ -14,7 +14,7 @@ export default function OurSetupprocess() {
         <div className="z-5 grid 2xl:gap-20 lg:gap-15 md:gap-15 sm:gap-15 gap-10">
           <div className="grid 2xl:gap-4 md:gap-4 sm:gap-2 gap-2">
             <h1
-              className={`2xl:text-center md:text-start sm:text-start text-start secondary--color leading-normal font-bold 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl`}
+              className={`title 2xl:text-center md:text-start sm:text-start text-start secondary--color leading-normal font-bold 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl`}
             >
               Inbox Infrastructure Setup
             </h1>

@@ -239,7 +239,6 @@ export function SetupProcessMobile() {
                         title="Scale My Outreach"
                         style="tertiary-btn"
                         link="/contact"
-                        align="flex justify-start"
                       ></Button>
                     </div>
                   </div>

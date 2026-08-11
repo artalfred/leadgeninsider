@@ -5,7 +5,19 @@ import Footer from "./footer";
 import Header from "./header";
 import ScrollToTop from "./components/scrollToTop";
 import { Inter_Tight } from "next/font/google";
-import BG from "@/public/background/Background.svg";
+import { Playfair_Display } from "next/font/google";
+import { Libertinus_Serif } from "next/font/google";
+
+const libertinus = Libertinus_Serif({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-libertinus",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
 
 const interTight = Inter_Tight({
   subsets: ["latin"],
@@ -30,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interTight.className} antialiased`}
+        className={`${interTight.className} ${playfair.variable} ${libertinus.variable} antialiased`}
         suppressHydrationWarning
       >
         <ScrollToTop />

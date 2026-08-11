@@ -7,16 +7,10 @@ import Infrastructure from "@/public/INFRASTRUCTURESETUP.svg";
 import { useRef, useState } from "react";
 import useClickedOutside from "./components/hooks/useClickOutside";
 import HowToGetStarted from "./components/HowToGetStarted";
-import ServicesOverview from "./components/ServicesOverview";
 import OurSetupprocess from "./components/OurSetupProcess";
-import SectionTitle from "./components/SectionTitle";
 
-import BI_one from "@/public/Showcase/BI_one.svg";
-import BI_two from "@/public/Showcase/BI_two.svg";
-import BI_three from "@/public/Showcase/BI_three.svg";
-import BI_four from "@/public/Showcase/BI_four.svg";
-import { Accordion } from "@heroui/react";
-import FAQAccordion from "./faqs/page";
+import Pricing from "./pricing/page";
+import ShowCase from "./components/ShowCase";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,12 +29,12 @@ export default function Home() {
   };
 
   return (
-    <>
-      <div className="max-w-7xl mx-auto 2xl:pt-0 md:py-0 sn:py-0 py-0 relative isolate overflow-hidden lg:overflow-visible lg:px-0 sm:px-4 px-4 grid 2xl:gap-20 md:gap-15 sm:gap-10 gap-10 justify-center 2xl:mt-60 mt-40">
+    <div>
+      <div className="bg-slate-950 h-screen 2xl:pt-0 md:py-0 sn:py-0 py-0 relative isolate overflow-hidden lg:overflow-visible lg:px-0 sm:px-4 px-4 grid 2xl:gap-20 md:gap-15 sm:gap-10 gap-10">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
             aria-hidden="true"
-            className="absolute top-0 left-[max(50%,25rem)] h-256 w-512 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-gray-800"
+            className="absolute bg-[#5e17eb]/50 top-0 left-[max(50%,25rem)] h-256 w-512 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-gray-300/15"
           >
             <defs>
               <pattern
@@ -54,7 +48,7 @@ export default function Home() {
                 <path d="M100 200V.5M.5 .5H200" fill="none" />
               </pattern>
             </defs>
-            <svg x="50%" y={-1} className="overflow-visible fill-gray-800/50">
+            <svg x="50%" y={-1} className="overflow-visible fill-[#521e96]/50">
               <path
                 d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
                 strokeWidth={0}
@@ -68,41 +62,40 @@ export default function Home() {
             />
           </svg>
         </div>
-        <div className="grid gap-6">
-          <div className="grid 2xl:gap-4 md:gap-2 gap-2">
-            <h1 className="text-center 2xl:text-7xl lg:text-6xl md:text-4xl sm:text-3xl text-3xl text-white">
-              High-volume email infrastructure
-            </h1>
+        <div className="grid items-center justify-center">
+          <div className="grid gap-10">
+            <div className="grid 2xl:gap-4 md:gap-2 gap-2">
+              <h1 className="title text-center 2xl:text-7xl lg:text-6xl md:text-4xl sm:text-3xl text-3xl text-white">
+                High-volume email infrastructure
+              </h1>
 
-            <h6 className="text-gray-400 font-normal 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl text-center">
-              Built for long-term deliverability.
-            </h6>
+              <h6 className="title text-gray-400 font-normal 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl text-center">
+                Built for long-term deliverability.
+              </h6>
 
-            <Content
-              style="text-center"
-              content="Automated email infrastructure that scales without risking deliverability."
-            />
-          </div>
+              <Content
+                style="text-center"
+                content="Automated email infrastructure that scales without risking deliverability."
+              />
+            </div>
+            <div className="w-full flex 2xl:flex items-center justify-center gap-4">
+              <Button
+                title="Get Started"
+                style="primary-btn"
+                link="/contact"
+              ></Button>
 
-          <div className="2xl:flex md:grid sm:grid grid gap-4 justify-center">
-            <Button
-              title="Get Started"
-              style="primary-btn"
-              link="/contact"
-              align="flex justify-center"
-            ></Button>
-
-            <Button
-              title="View Infrastructure Setup"
-              style="secondary-btn"
-              link=""
-              align=""
-              click={handleClickedOpen}
-            ></Button>
+              <Button
+                title="View Infrastructure Setup"
+                style="secondary-btn"
+                link=""
+                click={handleClickedOpen}
+              ></Button>
+            </div>
           </div>
         </div>
 
-        <div className="grid place-items-center gap-6 z-0">
+        {/* <div className="grid place-items-center gap-6 z-0">
           <div className="p-3 lg:p-6 bg-amber-50/10 rounded-2xl w-full max-w-4xl">
             <div className="aspect-video w-full overflow-hidden rounded-2xl z-0">
               <iframe
@@ -115,7 +108,7 @@ export default function Home() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* INFRASTRUCTURE SETUP */}
@@ -152,62 +145,17 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Services Overview */}
-      <ServicesOverview />
+      {/* <PRICING /> */}
+      <Pricing />
 
-      {/* Our Setup Process (Step-by-Step) / Inbox Infrastructure Setup */}
+      {/* Inbox Infrastructure Setup */}
       <OurSetupprocess />
 
       {/* Behind the Infrastructure */}
-      <div className="max-w-7xl mx-auto 2xl:px-0 md:px-6 sm:px-6 px-4">
-        <div className="grid 2xl:pt-20 md:pt-20 sm:pt-20 pt-20 2xl:pb-20 md:pb-20 sm:pb-0 pb-0">
-          <div className="flex justify-between items-center grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 gap-5">
-            <div>
-              <div className="flex gap-6 items-center">
-                <SectionTitle
-                  title="Behind the Infrastructure"
-                  style=""
-                  titleStyle="text-white"
-                />
-              </div>
-
-              <div className="grid">
-                <h4 className="text-white 2xl:text-xl md:text-md sm:text-md text-md">
-                  Real campaigns. Real infrastructure. Real deliverability.
-                </h4>
-
-                <Button
-                  title="Send us a message – we reply in minutes."
-                  style="primary-btn mt-4"
-                  link="/contact"
-                  align="flex justify-start"
-                ></Button>
-              </div>
-
-              <div className="grid 2xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-10">
-                <div>
-                  <Image src={BI_one} alt="BI-one" />
-                </div>
-                <div>
-                  <Image src={BI_two} alt="BI-one" />
-                </div>
-                <div>
-                  <Image src={BI_three} alt="BI-one" />
-                </div>
-                <div>
-                  <Image src={BI_four} alt="BI-one" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* FAQS */}
-      <FAQAccordion />
+      <ShowCase />
 
       {/* HOW TO GET STARTED */}
       <HowToGetStarted />
-    </>
+    </div>
   );
 }

@@ -13,7 +13,7 @@ export default function SectionTitle({ title, style, titleStyle }: Props) {
     <div>
       <div className={`flex ${style} gap-6 items-center`}>
         <h1
-          className={`${titleStyle} text-start leading-normal font-bold 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl`}
+          className={`${titleStyle} title text-start leading-normal font-bold 2xl:text-5xl lg:text-5xl md:text-3xl sm:text-2xl text-2xl`}
         >
           {title}
         </h1>

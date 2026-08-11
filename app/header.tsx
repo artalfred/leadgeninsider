@@ -112,7 +112,6 @@ export default function Header() {
                 title="Let’s Talk"
                 style="secondary-btn"
                 link="/contact"
-                align=""
               />
             </div>
 

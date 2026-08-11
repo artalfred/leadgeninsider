@@ -2,10 +2,28 @@
 
 html {
   scroll-behavior: smooth !important;
-  background-image: url("@/public/background/Background.svg");
+  background-color: oklch(92.9% 0.013 255.508);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+hero {
+  background-color: white;
+  /* background-image: url("@/public/background/Background.svg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  font-family: var(--font-playfair);
+  font-weight: 600;
+}
+
+.number {
+  font-family: var(--font-libertinus);
+  font-weight: 700;
 }
 
 body {
@@ -120,6 +138,36 @@ p {
   color: #ededed;
 }
 
+.primary-dark-btn {
+  background-color: oklch(37.9% 0.146 265.522);
+  color: #ffffff;
+  border: 2px solid oklch(37.9% 0.146 265.522);
+
+  cursor: pointer;
+}
+
+.primary-dark-btn:hover {
+  background-color: oklch(28.2% 0.091 267.935);
+  color: #fff;
+  border: 2px solid oklch(28.2% 0.091 267.935);
+  transition: all 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.primary-gray-btn {
+  background-color: oklch(92.8% 0.006 264.531);
+  border: 2px solid oklch(92.8% 0.006 264.531);
+  color: oklch(21% 0.034 264.665);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.primary-gray-btn:hover {
+  background-color: oklch(87.2% 0.01 258.338);
+  border: 2px solid oklch(87.2% 0.01 258.338);
+  transition: all 0.2s ease-in-out;
+}
+
 .secondary-btn {
   background-color: transparent;
   color: #ffffff;
@@ -132,21 +180,6 @@ p {
   background-color: #f3f3f3;
   transition: all 0.2s ease-in-out;
   color: #171717;
-}
-
-.tertiary-btn {
-  background-color: transparent;
-  color: #004aad;
-  border: 2px solid #004aad;
-  cursor: pointer;
-}
-
-.tertiary-btn:hover {
-  background-color: #004aad;
-  border: 2px solid #004aad;
-  background-color: #004aad;
-  transition: all 0.2s ease-in-out;
-  color: #fff;
 }
 
 /* /////////////////////////////////////////////////// */
@@ -219,13 +252,6 @@ p {
 
   height: 40rem;
 }
-
-/* .partnershipDeals {
-  background-image: url("@/public/background/PartnershipDeals.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 .InboxInfrastructureSetup {
   position: relative;

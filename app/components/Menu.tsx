@@ -1,10 +1,8 @@
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
-import { PhoneIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 import {
   ArrowTurnDownRightIcon,
   ArrowTurnLeftDownIcon,
 } from "@heroicons/react/24/outline";
-import Image from "next/image";
 import Link from "next/link";
 
 const solutions = [
